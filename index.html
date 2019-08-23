@@ -2,1280 +2,1281 @@
 <html>
 
 <head>
-	<link href="style.css" rel="stylesheet">
-	<meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
 </head>
 
 <body>
-	<div id="buttons">
-		<button class="filterButton active" onclick="filterSelection('all')"> Show all</button>
-		<button class="filterButton" onclick="filterSelection('Byleth')">Byleth</button>
-		<button class="filterButton" onclick="filterSelection('Edelgard')">Edelgard</button>
-		<button class="filterButton" onclick="filterSelection('Dimitri')">Dimitri</button>
-		<button class="filterButton" onclick="filterSelection('Claude')">Claude</button>
-		<button class="filterButton" onclick="filterSelection('Rhea')">Rhea</button>
-		<button class="filterButton" onclick="filterSelection('Hubert')">Hubert</button>
-		<button class="filterButton" onclick="filterSelection('Dorothea')">Dorothea</button>
-		<button class="filterButton" onclick="filterSelection('Ferdinand')">Ferdinand</button>
-		<button class="filterButton" onclick="filterSelection('Bernadetta')">Bernadetta</button>
-		<button class="filterButton" onclick="filterSelection('Caspar')">Caspar</button>
-		<button class="filterButton" onclick="filterSelection('Petra')">Petra</button>
-		<button class="filterButton" onclick="filterSelection('Linhardt')">Linhardt</button>
-		<button class="filterButton" onclick="filterSelection('Dedue')">Dedue</button>
-		<button class="filterButton" onclick="filterSelection('Felix')">Felix</button>
-		<button class="filterButton" onclick="filterSelection('Mercedes')">Mercedes</button>
-		<button class="filterButton" onclick="filterSelection('Ashe')">Ashe</button>
-		<button class="filterButton" onclick="filterSelection('Annette')">Annette</button>
-		<button class="filterButton" onclick="filterSelection('Sylvain')">Sylvain</button>
-		<button class="filterButton" onclick="filterSelection('Ingrid')">Ingrid</button>
-		<button class="filterButton" onclick="filterSelection('Lorenz')">Lorenz</button>
-		<button class="filterButton" onclick="filterSelection('Raphael')">Raphael</button>
-		<button class="filterButton" onclick="filterSelection('Lysithea')">Lysithea</button>
-		<button class="filterButton" onclick="filterSelection('Ignatz')">Ignatz</button>
-		<button class="filterButton" onclick="filterSelection('Marianne')">Marianne</button>
-		<button class="filterButton" onclick="filterSelection('Leonie')">Leonie</button>
-		<button class="filterButton" onclick="filterSelection('Manuela')">Manuela</button>
-		<button class="filterButton" onclick="filterSelection('Hanneman')">Hanneman</button>
-		<button class="filterButton" onclick="filterSelection('Catherine')">Catherine</button>
-		<button class="filterButton" onclick="filterSelection('Shamir')">Shamir</button>
-		<button class="filterButton" onclick="filterSelection('Alois')">Alois</button>
-		<button class="filterButton" onclick="filterSelection('Gilbert')">Gilbert</button>
-		<button class="filterButton" onclick="filterSelection('Cyril')">Cyril</button>
-		<button class="filterButton" onclick="filterSelection('Flayn')">Flayn</button>
-		<button class="filterButton" onclick="filterSelection('Seteth')">Seteth</button>
-		<button class="filterButton" onclick="filterSelection('Sothis')">Sothis</button>
-	</div>
+    <div id="buttons">
+        <button class="filterButton active" onclick="filterSelection('all')"> Show all</button>
+        <button class="filterButton" onclick="filterSelection('Byleth')">Byleth</button>
+        <button class="filterButton" onclick="filterSelection('Edelgard')">Edelgard</button>
+        <button class="filterButton" onclick="filterSelection('Dimitri')">Dimitri</button>
+        <button class="filterButton" onclick="filterSelection('Claude')">Claude</button>
+        <button class="filterButton" onclick="filterSelection('Rhea')">Rhea</button>
+        <button class="filterButton" onclick="filterSelection('Hubert')">Hubert</button>
+        <button class="filterButton" onclick="filterSelection('Dorothea')">Dorothea</button>
+        <button class="filterButton" onclick="filterSelection('Ferdinand')">Ferdinand</button>
+        <button class="filterButton" onclick="filterSelection('Bernadetta')">Bernadetta</button>
+        <button class="filterButton" onclick="filterSelection('Caspar')">Caspar</button>
+        <button class="filterButton" onclick="filterSelection('Petra')">Petra</button>
+        <button class="filterButton" onclick="filterSelection('Linhardt')">Linhardt</button>
+        <button class="filterButton" onclick="filterSelection('Dedue')">Dedue</button>
+        <button class="filterButton" onclick="filterSelection('Felix')">Felix</button>
+        <button class="filterButton" onclick="filterSelection('Mercedes')">Mercedes</button>
+        <button class="filterButton" onclick="filterSelection('Ashe')">Ashe</button>
+        <button class="filterButton" onclick="filterSelection('Annette')">Annette</button>
+        <button class="filterButton" onclick="filterSelection('Sylvain')">Sylvain</button>
+        <button class="filterButton" onclick="filterSelection('Ingrid')">Ingrid</button>
+        <button class="filterButton" onclick="filterSelection('Lorenz')">Lorenz</button>
+        <button class="filterButton" onclick="filterSelection('Raphael')">Raphael</button>
+        <button class="filterButton" onclick="filterSelection('Lysithea')">Lysithea</button>
+        <button class="filterButton" onclick="filterSelection('Ignatz')">Ignatz</button>
+        <button class="filterButton" onclick="filterSelection('Marianne')">Marianne</button>
+        <button class="filterButton" onclick="filterSelection('Leonie')">Leonie</button>
+        <button class="filterButton" onclick="filterSelection('Manuela')">Manuela</button>
+        <button class="filterButton" onclick="filterSelection('Hanneman')">Hanneman</button>
+        <button class="filterButton" onclick="filterSelection('Catherine')">Catherine</button>
+        <button class="filterButton" onclick="filterSelection('Shamir')">Shamir</button>
+        <button class="filterButton" onclick="filterSelection('Alois')">Alois</button>
+        <button class="filterButton" onclick="filterSelection('Gilbert')">Gilbert</button>
+        <button class="filterButton" onclick="filterSelection('Cyril')">Cyril</button>
+        <button class="filterButton" onclick="filterSelection('Flayn')">Flayn</button>
+        <button class="filterButton" onclick="filterSelection('Seteth')">Seteth</button>
+        <button class="filterButton" onclick="filterSelection('Sothis')">Sothis</button>
+    </div>
 
-	<div class="container" id="endings">
-		<div class="filterDiv Byleth Edelgard">
-			<p>
-				Byleth x Edelgard (route not romance)
-				Byleth fought alongside Edelgard to bring an end to the tyranny of a godlike being. Though he/she was
-				wounded in the battle and lost the power of the progenitor god, he/she remained determined to walk
-				his/her destined path. With his/her legendary blade in hand, he/she will never stop standing against
-				those who slither in the dark until Fódlan at last knows everlasting peace.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Dimitri">
-			<p>
-				Byleth x Dimitri (route not romance)
-				Byleth helped Dimitri to finally crush the ambitions of the Empire. After the war, Rhea stepped down
-				from her role as archbishop, and Byleth swore to lead the Church of Seiros in her stead. he/she helped
-				to guide the Holy Kingdom of Faerghus as it brought leadership to the newly unified Fódlan and worked
-				tirelessly to create a peaceful world free from the shackles of oppression.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Rhea">
-			<p>
-				Byleth x Rhea (route not romance)
-				Byleth defeated those who slither in the dark and put down the crazed Immaculate One. In the aftermath
-				of the loss of Fódlan's great leading figures, he/she ascended the throne as the first leader of the
-				United Kingdom of Fódlan. In his/her heart lived the indelible hope that their efforts would one day
-				yield an era in which the people knew true peace and the horrors of war were a hazy memory of the past.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Claude">
-			<p>
-				Byleth x Claude (route not romance)
-				Together, Byleth and Claude sent the Fell King Nemesis, a foe from a bygone age, back to the flames of
-				eternity from whence he came. Afterward, Claude left Fódlan, leaving Byleth to ascend the throne as the
-				first leader of the United Kingdom of Fódlan. As he took his schemes and dreams and efforts to a far-off
-				land, he hoped dearly that their joint efforts would one day allow for a world where all of humanity can
-				coexist in peace and harmony, regardless of borders or bloodlines.
-			</p>
-		</div>
-		<div class="filterDiv Edelgard">
-			<p>
-				Edelgard
-				As the new Adrestian emperor, Edelgard dedicated her life to reshaping the delicate political structure
-				of Fódlan. With tireless work and great sacrifice, she reformed the class system to ensure a free and
-				independent society for all. In her later years, she entrusted her life's work to a worthy successor
-				before finally vanishing from the public eye.
-			</p>
-		</div>
-		<div class="filterDiv Dimitri">
-			<p>
-				Dimitri
-				After his coronation, Dimitri spent his life reforming and ruling justly over Fódlan. He focused
-				particularly on improving living situations for orphans and improving foreign relations. He was known
-				for listening intently to the voices of all, and for instituting a new form of government in which the
-				people were free to be active participants. He lived for his people and alongside them, and was thusly
-				dubbed the Savior King.
-			</p>
-		</div>
-		<div class="filterDiv Claude">
-			<p>
-				Claude
-				Claude returned to his homeland of Almyra and assumed the role of a politically active prince. After
-				inheriting the throne, he worked to improve relations with Fódlan. In addition to establishing new trade
-				routes, he fostered trust by sending reinforcements into Fódlan to help quell revolts by the remnants of
-				the Imperial loyalists. Under his guidance, the peoples of Fódlan and Almyra were finally able to set
-				aside age-old prejudices, and over time, the fallacies of old were all but forgotten.
-			</p>
-		</div>
-		<div class="filterDiv Hubert">
-			<p>
-				Hubert
-				Hubert devoted his life fully to the service of Edelgard. Operating in the light and the shadows alike,
-				he disposed of countless burdens facing his emperor, using any means necessary. Though his ghastly
-				appearance and imposing demeanor were ever feared, he paid his reputation little heed, focusing instead
-				on his loyalty to the emperor.
-			</p>
-		</div>
-		<div class="filterDiv Dorothea">
-			<p>
-				Dorothea
-				Dorothea returned to the Mittelfrank Opera as soon as the war was over. Thanks to her talent, the
-				company enjoyed a resurgence in popularity that lasted well beyond the end of her own career. Once she
-				gave up her position as a songstress, she settled down to a private life of peace and quiet. It is said
-				that she was very happily married.
-			</p>
-		</div>
-		<div class="filterDiv Ferdinand">
-			<p>
-				Ferdinand
-				After officially becoming the new Duke Aegir, Ferdinand set about reforming his territory. He overcame
-				numerous obstacles to help the lands of Aegir recover. To recognize his contributions during and after
-				the war, the emperor appointed him as the new prime minister. Thereafter, he stayed by Edelgard's side
-				to help the Empire achieve great prosperity.
+    <div class="container" id="endings">
+        <div class="filterDiv Byleth Edelgard">
+            <p>
+                Byleth x Edelgard (route not romance)<br>
+                Byleth fought alongside Edelgard to bring an end to the tyranny of a godlike being. Though he/she was
+                wounded in the battle and lost the power of the progenitor god, he/she remained determined to walk
+                his/her destined path. With his/her legendary blade in hand, he/she will never stop standing against
+                those who slither in the dark until Fódlan at last knows everlasting peace.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Dimitri">
+            <p>
+                Byleth x Dimitri (route not romance)<br>
+                Byleth helped Dimitri to finally crush the ambitions of the Empire. After the war, Rhea stepped down
+                from her role as archbishop, and Byleth swore to lead the Church of Seiros in her stead. he/she helped
+                to guide the Holy Kingdom of Faerghus as it brought leadership to the newly unified Fódlan and worked
+                tirelessly to create a peaceful world free from the shackles of oppression.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Rhea">
+            <p>
+                Byleth x Rhea (route not romance)<br>
+                Byleth defeated those who slither in the dark and put down the crazed Immaculate One. In the aftermath
+                of the loss of Fódlan's great leading figures, he/she ascended the throne as the first leader of the
+                United Kingdom of Fódlan. In his/her heart lived the indelible hope that their efforts would one day
+                yield an era in which the people knew true peace and the horrors of war were a hazy memory of the past.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Claude">
+            <p>
+                Byleth x Claude (route not romance)<br>
+                Together, Byleth and Claude sent the Fell King Nemesis, a foe from a bygone age, back to the flames of
+                eternity from whence he came. Afterward, Claude left Fódlan, leaving Byleth to ascend the throne as the
+                first leader of the United Kingdom of Fódlan. As he took his schemes and dreams and efforts to a far-off
+                land, he hoped dearly that their joint efforts would one day allow for a world where all of humanity can
+                coexist in peace and harmony, regardless of borders or bloodlines.
+            </p>
+        </div>
+        <div class="filterDiv Edelgard">
+            <p>
+                Edelgard<br>
+                As the new Adrestian emperor, Edelgard dedicated her life to reshaping the delicate political structure
+                of Fódlan. With tireless work and great sacrifice, she reformed the class system to ensure a free and
+                independent society for all. In her later years, she entrusted her life's work to a worthy successor
+                before finally vanishing from the public eye.
+            </p>
+        </div>
+        <div class="filterDiv Dimitri">
+            <p>
+                Dimitri<br>
+                After his coronation, Dimitri spent his life reforming and ruling justly over Fódlan. He focused
+                particularly on improving living situations for orphans and improving foreign relations. He was known
+                for listening intently to the voices of all, and for instituting a new form of government in which the
+                people were free to be active participants. He lived for his people and alongside them, and was thusly
+                dubbed the Savior King.
+            </p>
+        </div>
+        <div class="filterDiv Claude">
+            <p>
+                Claude<br>
+                Claude returned to his homeland of Almyra and assumed the role of a politically active prince. After
+                inheriting the throne, he worked to improve relations with Fódlan. In addition to establishing new trade
+                routes, he fostered trust by sending reinforcements into Fódlan to help quell revolts by the remnants of
+                the Imperial loyalists. Under his guidance, the peoples of Fódlan and Almyra were finally able to set
+                aside age-old prejudices, and over time, the fallacies of old were all but forgotten.
+            </p>
+        </div>
+        <div class="filterDiv Hubert">
+            <p>
+                Hubert<br>
+                Hubert devoted his life fully to the service of Edelgard. Operating in the light and the shadows alike,
+                he disposed of countless burdens facing his emperor, using any means necessary. Though his ghastly
+                appearance and imposing demeanor were ever feared, he paid his reputation little heed, focusing instead
+                on his loyalty to the emperor.
+            </p>
+        </div>
+        <div class="filterDiv Dorothea">
+            <p>
+                Dorothea<br>
+                Dorothea returned to the Mittelfrank Opera as soon as the war was over. Thanks to her talent, the
+                company enjoyed a resurgence in popularity that lasted well beyond the end of her own career. Once she
+                gave up her position as a songstress, she settled down to a private life of peace and quiet. It is said
+                that she was very happily married.
+            </p>
+        </div>
+        <div class="filterDiv Ferdinand">
+            <p>
+                Ferdinand<br>
+                After officially becoming the new Duke Aegir, Ferdinand set about reforming his territory. He overcame
+                numerous obstacles to help the lands of Aegir recover. To recognize his contributions during and after
+                the war, the emperor appointed him as the new prime minister. Thereafter, he stayed by Edelgard's side
+                to help the Empire achieve great prosperity.<br>
 
-				After reclaiming the title of Duke Aegir, Ferdinand set about reforming his territory. He overcame
-				numerous obstacles to help the lands of Aegir recover, and in recognition of those achievements, he was
-				invited to take part in helping to govern all of Fódlan.
-			</p>
-		</div>
-		<div class="filterDiv Bernadetta">
-			<p>
-				Bernadetta
-				As soon as Bernadetta inherited House Varley from her father, she withdrew from all political discourse
-				and focused solely on the management of her own territory. Because of this and her penchant for spending
-				long periods of time in "hibernation," she became known throughout the house's history as the "Bear of
-				Varley."
-			</p>
-		</div>
-		<div class="filterDiv Caspar">
-			<p>
-				Caspar
-				In recognition of his achievements during the war, Caspar was given the title of Minister of Military
-				Affairs in the new Adrestian Empire. Though his command developed a reputation for occasional
-				recklessness, he proved an able leader, guiding his troops to overcome countless obstacles. Long after
-				his career had ended, tall tales of the glory and good cheer that he brought to his army endured.
+                After reclaiming the title of Duke Aegir, Ferdinand set about reforming his territory. He overcame
+                numerous obstacles to help the lands of Aegir recover, and in recognition of those achievements, he was
+                invited to take part in helping to govern all of Fódlan.
+            </p>
+        </div>
+        <div class="filterDiv Bernadetta">
+            <p>
+                Bernadetta<br>
+                As soon as Bernadetta inherited House Varley from her father, she withdrew from all political discourse
+                and focused solely on the management of her own territory. Because of this and her penchant for spending
+                long periods of time in "hibernation," she became known throughout the house's history as the "Bear of
+                Varley."
+            </p>
+        </div>
+        <div class="filterDiv Caspar">
+            <p>
+                Caspar<br>
+                In recognition of his achievements during the war, Caspar was given the title of Minister of Military
+                Affairs in the new Adrestian Empire. Though his command developed a reputation for occasional
+                recklessness, he proved an able leader, guiding his troops to overcome countless obstacles. Long after
+                his career had ended, tall tales of the glory and good cheer that he brought to his army endured.
+                <br>
+                After the war, Caspar set out alone on a journey of self-discovery. He traveled to every corner of
+                Fódlan and even ventured abroad now and again. It is said that he got into mischief at every turn but
+                that the victims of his antics, always more amused than harmed or offended, remembered him fondly and
+                passed those stories on to future generations.
+            </p>
+        </div>
+        <div class="filterDiv Petra">
+            <p>
+                Petra<br>
+                Petra returned to her homeland of Brigid and inherited the throne from her grandfather. As ruler, she
+                declared independence from Fódlan and worked tirelessly to secure friendly relations with both Fódlan
+                and Dagda. Her efforts inspired her descendants to carry the torch she lit, ensuring a future of peace
+                and prosperity for her people.<br>
+                Returned to Brigid after the battle of Garreg Mach. She was unable to make the promised meeting.
+            </p>
+        </div>
+        <div class="filterDiv Linhardt">
+            <p>
+                Linhardt<br>
+                Linhardt abandoned his inherited position in favor of a carefree life at Garreg Mach Monastery. There he
+                spent his days at ease, wiling away the hours at the fishing pond or in his private study. After his
+                passing, a treasure trove of documents was unearthed, revealing the key discoveries he had made during
+                his many years of Crest research.
+            </p>
+        </div>
+        <div class="filterDiv Dedue">
+            <p>
+                Dedue<br>
+                As a loyal vassal, Dedue dedicated his life to supporting King Dimitri through his entire reign. After
+                tending to his liege on his deathbed, Dedue resumed his post at Dimitri's grave on the edge of Fhirdiad.
+                There, it is said he stood sentinel over the peaceful realm he had helped build until the end of his
+                days.
+            </p>
+        </div>
+        <div class="filterDiv Felix">
+            <p>
+                Felix<br>
+                As Duke Fraldarius, Felix worked for years to revitalize and rebuild his territory. He became the king's
+                right-hand man, serving as a trusted adviser on a range of subjects, especially military affairs. Later
+                in his life, he inherited his father's nickname and was known throughout the Kingdom as the Shield of
+                Faerghus's worthy successor.<br>
+                Even after the war's end, skirmishes continued to break out across Fódlan. Bored and restless in his
+                capacity as Duke Fraldarius, Felix abandoned his title, jumping at the opportunity to wield a sword
+                again. Little is known of his whereabouts thereafter, but even many years later, soldiers continued to
+                whisper rumors of a mysterious man able to deal swift death to scores of enemies.
 
-				After the war, Caspar set out alone on a journey of self-discovery. He traveled to every corner of
-				Fódlan and even ventured abroad now and again. It is said that he got into mischief at every turn but
-				that the victims of his antics, always more amused than harmed or offended, remembered him fondly and
-				passed those stories on to future generations.
-			</p>
-		</div>
-		<div class="filterDiv Petra">
-			<p>
-				Petra
-				Petra returned to her homeland of Brigid and inherited the throne from her grandfather. As ruler, she
-				declared independence from Fódlan and worked tirelessly to secure friendly relations with both Fódlan
-				and Dagda. Her efforts inspired her descendants to carry the torch she lit, ensuring a future of peace
-				and prosperity for her people.
-				Returned to Brigid after the battle of Garreg Mach. She was unable to make the promised meeting.
-			</p>
-		</div>
-		<div class="filterDiv Linhardt">
-			<p>
-				Linhardt
-				Linhardt abandoned his inherited position in favor of a carefree life at Garreg Mach Monastery. There he
-				spent his days at ease, wiling away the hours at the fishing pond or in his private study. After his
-				passing, a treasure trove of documents was unearthed, revealing the key discoveries he had made during
-				his many years of Crest research.
-			</p>
-		</div>
-		<div class="filterDiv Dedue">
-			<p>
-				Dedue
-				As a loyal vassal, Dedue dedicated his life to supporting King Dimitri through his entire reign. After
-				tending to his liege on his deathbed, Dedue resumed his post at Dimitri's grave on the edge of Fhirdiad.
-				There, it is said he stood sentinel over the peaceful realm he had helped build until the end of his
-				days.
-			</p>
-		</div>
-		<div class="filterDiv Felix">
-			<p>
-				Felix
-				As Duke Fraldarius, Felix worked for years to revitalize and rebuild his territory. He became the king's
-				right-hand man, serving as a trusted adviser on a range of subjects, especially military affairs. Later
-				in his life, he inherited his father's nickname and was known throughout the Kingdom as the Shield of
-				Faerghus's worthy successor.
-				Even after the war's end, skirmishes continued to break out across Fódlan. Bored and restless in his
-				capacity as Duke Fraldarius, Felix abandoned his title, jumping at the opportunity to wield a sword
-				again. Little is known of his whereabouts thereafter, but even many years later, soldiers continued to
-				whisper rumors of a mysterious man able to deal swift death to scores of enemies.
+            </p>
+        </div>
+        <div class="filterDiv Mercedes">
+            <p>
+                Mercedes<br>
+                Mercedes left home and opened a small orphanage in the Faerghus region with her mother. There, she took
+                in and raised children who had lost their families in the war, regardless of their blood or
+                circumstances of birth. It is said that, in the town which grew around this orphanage, the children
+                never failed to smile.<br>
+                Mercedes left home and went to Garreg Mach, where she became a model cleric. She devoted the whole of
+                her life to the service of the goddess and became well-loved by the people, who revered her for her
+                piety and her boundless generosity toward those in need.
+            </p>
+        </div>
+        <div class="filterDiv Ashe">
+            <p>
+                Ashe<br>
+                After the war, Ashe was formally knighted and appointed the new head of House Gaspard, which had no
+                successors. His warm, sincere attitude toward his subjects was praised all over Fódlan, and Ashe was
+                finally recognized as the ideal knight he'd always hoped to be. His deeds live on in countless tales.
+            </p>
+        </div>
+        <div class="filterDiv Annette">
+            <p>
+                Annette<br>
+                Annette returned to her hometown of Fhirdiad where she took up a teaching position at the Royal School
+                of Sorcery. She was a gifted instructor, and many of her students went on to become world-renowned
+                sages. Though her talent for teaching was remarkable in its own right, she was perhaps best remembered
+                for effortlessly securing the trust and respect of her many students, as well as inspiring all who knew
+                her by living a life of kindness, cheer, and humility.
 
-			</p>
-		</div>
-		<div class="filterDiv Mercedes">
-			<p>
-				Mercedes
-				Mercedes left home and opened a small orphanage in the Faerghus region with her mother. There, she took
-				in and raised children who had lost their families in the war, regardless of their blood or
-				circumstances of birth. It is said that, in the town which grew around this orphanage, the children
-				never failed to smile.
-				Mercedes left home and went to Garreg Mach, where she became a model cleric. She devoted the whole of
-				her life to the service of the goddess and became well-loved by the people, who revered her for her
-				piety and her boundless generosity toward those in need.
-			</p>
-		</div>
-		<div class="filterDiv Ashe">
-			<p>
-				Ashe
-				After the war, Ashe was formally knighted and appointed the new head of House Gaspard, which had no
-				successors. His warm, sincere attitude toward his subjects was praised all over Fódlan, and Ashe was
-				finally recognized as the ideal knight he'd always hoped to be. His deeds live on in countless tales.
-			</p>
-		</div>
-		<div class="filterDiv Annette">
-			<p>
-				Annette
-				Annette returned to her hometown of Fhirdiad where she took up a teaching position at the Royal School
-				of Sorcery. She was a gifted instructor, and many of her students went on to become world-renowned
-				sages. Though her talent for teaching was remarkable in its own right, she was perhaps best remembered
-				for effortlessly securing the trust and respect of her many students, as well as inspiring all who knew
-				her by living a life of kindness, cheer, and humility.
+            </p>
+        </div>
+        <div class="filterDiv Sylvain">
+            <p>
+                Sylvain<br>
+                As Margrave Gautier, Sylvain devoted his life to improving relations with the people of the Sreng
+                region. With oration alone, he succeeded in helping to create a new way of life for nobles in which
+                Relics and Crests were no longer viewed as necessary. Though he went down in history as an extraordinary
+                lord, it nevertheless became customary to refer to cheaters as "sons of Gautier."
+            </p>
+        </div>
+        <div class="filterDiv Ingrid">
+            <p>
+                Ingrid<br>
+                Ingrid declined to rule House Galatea, choosing instead to serve House Blaiddyd as a knight. After
+                achieving widespread renown, she formed an elite order of pegasus knights who served as personal
+                bodyguards to the nobility. She never took a husband.<br>
+                When Galatea territory was seized, Ingrid argued strongly for the preservation of its borders. Her
+                request was granted, and she was appointed to rule. From her new position, she gave her all to ensure
+                that the people of Galatea lived peaceful lives and put in years of hard work to reform its farming
+                practices. Her efforts bore fruit, to the people's delight, and Galatea became a land of plenty.
+            </p>
+        </div>
+        <div class="filterDiv Hilda">
+            <p>
+                Hilda<br>
+                After the war, Hilda set politics aside and focused on what she enjoyed most: crafting fashionable
+                accessories. Her designs quickly achieved widespread popularity. With the help of her brother, Hilda
+                then created the first artisan academy in Fódlan, where she served as both professor and headmaster.
+            </p>
+        </div>
+        <div class="filterDiv Lorenz">
+            <p>
+                Lorenz<br>
+                Soon after the war, Lorenz assumed leadership over House Gloucester and helped govern Fódlan as a
+                representative of the old Alliance lords. His political talent yielded revolutionary policy changes,
+                many of which were of particular benefit to the commonfolk.<br>
+                Soon after the war, Lorenz assumed leadership over House Gloucester and joined the realm of Imperial
+                politics as a representative of the old Alliance lords. His political talent yielded revolutionary
+                policy changes, many of which were particularly beneficial to the commonfolk.
 
-			</p>
-		</div>
-		<div class="filterDiv Sylvain">
-			<p>
-				Sylvain
-				As Margrave Gautier, Sylvain devoted his life to improving relations with the people of the Sreng
-				region. With oration alone, he succeeded in helping to create a new way of life for nobles in which
-				Relics and Crests were no longer viewed as necessary. Though he went down in history as an extraordinary
-				lord, it nevertheless became customary to refer to cheaters as "sons of Gautier."
-			</p>
-		</div>
-		<div class="filterDiv Ingrid">
-			<p>
-				Ingrid
-				Ingrid declined to rule House Galatea, choosing instead to serve House Blaiddyd as a knight. After
-				achieving widespread renown, she formed an elite order of pegasus knights who served as personal
-				bodyguards to the nobility. She never took a husband.
-				When Galatea territory was seized, Ingrid argued strongly for the preservation of its borders. Her
-				request was granted, and she was appointed to rule. From her new position, she gave her all to ensure
-				that the people of Galatea lived peaceful lives and put in years of hard work to reform its farming
-				practices. Her efforts bore fruit, to the people's delight, and Galatea became a land of plenty.
-			</p>
-		</div>
-		<div class="filterDiv Hilda">
-			<p>
-				Hilda
-				After the war, Hilda set politics aside and focused on what she enjoyed most: crafting fashionable
-				accessories. Her designs quickly achieved widespread popularity. With the help of her brother, Hilda
-				then created the first artisan academy in Fódlan, where she served as both professor and headmaster.
-			</p>
-		</div>
-		<div class="filterDiv Lorenz">
-			<p>
-				Lorenz
-				Soon after the war, Lorenz assumed leadership over House Gloucester and helped govern Fódlan as a
-				representative of the old Alliance lords. His political talent yielded revolutionary policy changes,
-				many of which were of particular benefit to the commonfolk.
-				Soon after the war, Lorenz assumed leadership over House Gloucester and joined the realm of Imperial
-				politics as a representative of the old Alliance lords. His political talent yielded revolutionary
-				policy changes, many of which were particularly beneficial to the commonfolk.
+            </p>
+        </div>
+        <div class="filterDiv Raphael">
+            <p>
+                Raphael<br>
+                Raphael returned to his hometown to serve his liege lord as a knight. After years of loyal service, he
+                resigned his duty to devote his attention to the inn that his grandfather and sister had opened during
+                his time away. Eventually he became the inn's proprietor and developed a reputation for astonishingly
+                good cooking.
+            </p>
+        </div>
+        <div class="filterDiv Lysithea">
+            <p>
+                Lysithea<br>
+                Lysithea returned home to help her parents restore their family land. Years later, when the end to their
+                hard work was finally in sight, she relinquished House Ordelia's claim to nobility, ceding the territory
+                to a nearby lord. Shortly thereafter, she and her family disappeared into obscurity.
+                <br>
+                Returned to her territory after the battle of Garreg Mach, but lived a shortened life. She was unable to
+                make the promised meeting.
+            </p>
+        </div>
+        <div class="filterDiv Ignatz">
+            <p>
+                Ignatz<br>
+                After returning home, Ignatz persuaded his family that he should become a painter. He traveled all
+                through Fódlan and beyond, painting beautiful landscapes and captivating portraits of the world's
+                cultures. His unique style set the artistic paradigm for a generation.
+            </p>
+        </div>
+        <div class="filterDiv Marianne">
+            <p>
+                Marianne<br>
+                Marianne returned home to a hero's welcome. The people praised her talent and acknowledged her as a
+                savior of Fódlan. Her adoptive father groomed her as his successor, teaching her the power of words over
+                weapons. By the time she claimed her inheritance, she had transformed into one of Fódlan's most skilled
+                orators.
+                <br>
+                Married off according to the wishes of her adoptive father after the battle of Garreg Mach. She was
+                unable to make the promised meeting.
+            </p>
+        </div>
+        <div class="filterDiv Leonie">
+            <p>
+                Leonie<br>
+                Leonie joined up with the mercenaries formerly led by Jeralt. As his greatest apprentice, she quickly
+                took on a leadership role and eventually even inherited the title of Blade Breaker. She came to be known
+                as Jeralt the Second, as she began to resemble him in all things—including his drinking habits. She left
+                behind many unpaid tavern tabs.
+            </p>
+        </div>
+        <div class="filterDiv Manuela">
+            <p>
+                Manuela<br>
+                Manuela left Garreg Mach to build her own academy in a small, war-torn town. There, she contributed
+                heavily to rebuilding efforts while teaching future generations the necessary skills of survival. Though
+                she never married or had children of her own, she spent the last years of her life happily devoted to
+                her students.
+            </p>
+        </div>
+        <div class="filterDiv Hanneman">
+            <p>
+                Hanneman<br>
+                Though Fódlan had changed, Hanneman's goal remained unwavering: to determine the workings of the Crests
+                and to do away with the inequality caused by them. To that end, his research resulted in magical tools
+                that could be used even without the aid of Crests. This proved to be yet another worthwhile discovery by
+                the Father of Crestology.
+            </p>
+        </div>
+        <div class="filterDiv Catherine">
+            <p>
+                Catherine<br>
+                Catherine left the Knights of Seiros and set out to travel across Fódlan. With Thunderbrand in hand, she
+                wandered the countryside, seeking always to defend the innocent and punish the wicked. Her many years of
+                heroics ensured that she would always be remembered by the people as a beloved folk hero.
+            </p>
+        </div>
+        <div class="filterDiv Shamir">
+            <p>
+                Shamir<br>
+                Shortly after the war, Shamir gave up the mercenary life and disappeared. Though she was never heard
+                from again, rumors swirled persistently for years of a master archer turned thief who lined her pockets
+                by shaking down all those who preyed upon the innocent.
+                <br>
+                Left the Knights of Seiros after the battle of Garreg Mach, and disappeared thereafter.
+            </p>
+        </div>
+        <div class="filterDiv Alois">
+            <p>
+                Alois<br>
+                Once the long war against those who slither in the dark came to an end, Alois and his family moved to
+                Remire Village and lived happily as farmers. It is said that from the moment he put down his sword and
+                picked up a hoe, he never so much as thought about turning back.
+                <br>
+                Once all the fighting had come to an end, Alois officially took up the position of captain of the
+                Knights of Seiros. In this capacity, he was much beloved, and the Knights became more unified than ever
+                under his command. It is said that their accomplishments during his tenure were beyond even what
+                Jeralt's troop had achieved.
+            </p>
+        </div>
+        <div class="filterDiv Gilbert">
+            <p>
+                Gilbert<br>
+                Gilbert returned to Fhirdiad and resumed his duty as a knight, faithfully serving King Dimitri for many
+                years. When he finally retired, it is said he spent the rest of his days coaching the young prince in
+                the art of combat.
+            </p>
+        </div>
+        <div class="filterDiv Cyril">
+            <p>
+                Cyril<br>
+                Unable to serve Rhea any longer, Cyril nearly left the church. He was persuaded to stay, however, to
+                assist in rebuilding the monastery he had helped maintain. Thanks to his devoted work ethic, the
+                Officers Academy was able to reopen a few years later. When the new students took the reception hall,
+                Cyril found himself among them.<br>
 
-			</p>
-		</div>
-		<div class="filterDiv Raphael">
-			<p>
-				Raphael
-				Raphael returned to his hometown to serve his liege lord as a knight. After years of loyal service, he
-				resigned his duty to devote his attention to the inn that his grandfather and sister had opened during
-				his time away. Eventually he became the inn's proprietor and developed a reputation for astonishingly
-				good cooking.
-			</p>
-		</div>
-		<div class="filterDiv Lysithea">
-			<p>
-				Lysithea
-				Lysithea returned home to help her parents restore their family land. Years later, when the end to their
-				hard work was finally in sight, she relinquished House Ordelia's claim to nobility, ceding the territory
-				to a nearby lord. Shortly thereafter, she and her family disappeared into obscurity.
-				Returned to her territory after the battle of Garreg Mach, but lived a shortened life. She was unable to
-				make the promised meeting.
-			</p>
-		</div>
-		<div class="filterDiv Ignatz">
-			<p>
-				Ignatz
-				After returning home, Ignatz persuaded his family that he should become a painter. He traveled all
-				through Fódlan and beyond, painting beautiful landscapes and captivating portraits of the world's
-				cultures. His unique style set the artistic paradigm for a generation.
-			</p>
-		</div>
-		<div class="filterDiv Marianne">
-			<p>
-				Marianne
-				Marianne returned home to a hero's welcome. The people praised her talent and acknowledged her as a
-				savior of Fódlan. Her adoptive father groomed her as his successor, teaching her the power of words over
-				weapons. By the time she claimed her inheritance, she had transformed into one of Fódlan's most skilled
-				orators.
+                Searched for Rhea after the battle of Garreg Mach, but was attacked and killed by monsters.
+            </p>
+        </div>
+        <div class="filterDiv Flayn">
+            <p>
+                Flayn<br>
+                Flayn disappeared soon after the war, and over time it was all but forgotten that she had ever existed.
+                Many long years later, however, a young woman resurfaced in a completely transformed Fódlan. When she
+                looked to the man who stood beside her, she wondered if it would be all right, in this new era, to call
+                him Father.<br>
 
-				Married off according to the wishes of her adoptive father after the battle of Garreg Mach. She was
-				unable to make the promised meeting.
-			</p>
-		</div>
-		<div class="filterDiv Leonie">
-			<p>
-				Leonie
-				Leonie joined up with the mercenaries formerly led by Jeralt. As his greatest apprentice, she quickly
-				took on a leadership role and eventually even inherited the title of Blade Breaker. She came to be known
-				as Jeralt the Second, as she began to resemble him in all things—including his drinking habits. She left
-				behind many unpaid tavern tabs.
-			</p>
-		</div>
-		<div class="filterDiv Manuela">
-			<p>
-				Manuela
-				Manuela left Garreg Mach to build her own academy in a small, war-torn town. There, she contributed
-				heavily to rebuilding efforts while teaching future generations the necessary skills of survival. Though
-				she never married or had children of her own, she spent the last years of her life happily devoted to
-				her students.
-			</p>
-		</div>
-		<div class="filterDiv Hanneman">
-			<p>
-				Hanneman
-				Though Fódlan had changed, Hanneman's goal remained unwavering: to determine the workings of the Crests
-				and to do away with the inequality caused by them. To that end, his research resulted in magical tools
-				that could be used even without the aid of Crests. This proved to be yet another worthwhile discovery by
-				the Father of Crestology.
-			</p>
-		</div>
-		<div class="filterDiv Catherine">
-			<p>
-				Catherine
-				Catherine left the Knights of Seiros and set out to travel across Fódlan. With Thunderbrand in hand, she
-				wandered the countryside, seeking always to defend the innocent and punish the wicked. Her many years of
-				heroics ensured that she would always be remembered by the people as a beloved folk hero.
-			</p>
-		</div>
-		<div class="filterDiv Shamir">
-			<p>
-				Shamir
-				Shortly after the war, Shamir gave up the mercenary life and disappeared. Though she was never heard
-				from again, rumors swirled persistently for years of a master archer turned thief who lined her pockets
-				by shaking down all those who preyed upon the innocent.
-				
-				Left the Knights of Seiros after the battle of Garreg Mach, and disappeared thereafter.
-			</p>
-		</div>
-		<div class="filterDiv Alois">
-			<p>
-				Alois
-				Once the long war against those who slither in the dark came to an end, Alois and his family moved to
-				Remire Village and lived happily as farmers. It is said that from the moment he put down his sword and
-				picked up a hoe, he never so much as thought about turning back.
-				
-				Once all the fighting had come to an end, Alois officially took up the position of captain of the
-				Knights of Seiros. In this capacity, he was much beloved, and the Knights became more unified than ever
-				under his command. It is said that their accomplishments during his tenure were beyond even what
-				Jeralt's troop had achieved.
-			</p>
-		</div>
-		<div class="filterDiv Gilbert">
-			<p>
-				Gilbert
-				Gilbert returned to Fhirdiad and resumed his duty as a knight, faithfully serving King Dimitri for many
-				years. When he finally retired, it is said he spent the rest of his days coaching the young prince in
-				the art of combat.
-			</p>
-		</div>
-		<div class="filterDiv Cyril">
-			<p>
-				Cyril
-				Unable to serve Rhea any longer, Cyril nearly left the church. He was persuaded to stay, however, to
-				assist in rebuilding the monastery he had helped maintain. Thanks to his devoted work ethic, the
-				Officers Academy was able to reopen a few years later. When the new students took the reception hall,
-				Cyril found himself among them.
-				
-				Searched for Rhea after the battle of Garreg Mach, but was attacked and killed by monsters.
-			</p>
-		</div>
-		<div class="filterDiv Flayn">
-			<p>
-				Flayn
-				Flayn disappeared soon after the war, and over time it was all but forgotten that she had ever existed.
-				Many long years later, however, a young woman resurfaced in a completely transformed Fódlan. When she
-				looked to the man who stood beside her, she wondered if it would be all right, in this new era, to call
-				him Father.
-				
-				Flayn disappeared soon after the war, and after a time, proof of her very existence faded from memory.
-				Many years later, a young woman appeared at the monastery, which had been restored to its former glory.
-				Speaking to no one in particular, it is said that she gazed at the entrance and reverently whispered, "I
-				am home."
-			</p>
-		</div>
-		<div class="filterDiv Seteth">
-			<p>
-				Seteth
-				Seteth remained at the monastery and worked to restore the authority of the Church of Seiros. Doing away
-				with his old strictness, he adopted a tolerant stance toward all. His encouragement of believers to
-				respect those of other faiths helped the people of Fódlan to find common ground with others.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Edelgard">
-			<p>
-				Byleth x Edelgard
-				Byleth and Edelgard ended the tyranny of a godlike being. Byleth was wounded and lost the power of the
-				progenitor god, but it mattered not, as he/she and Edelgard had each other. To ensure lasting peace, the
-				two fought against those who slither in the dark, and to ensure a society where people can rise and fall
-				by their own merits, they spent their lives reforming the antiquated class system. They achieved much in
-				their time together, and it is said that they were sometimes spotted leaving the palace to privately
-				enjoy the world they had created. How they spent those precious moments, none but the two of them will
-				ever know.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Dimitri">
-			<p>
-				Byleth x Dimitri
-				Paired with the end of the war, the joyous marriage of Byleth, the newly-appointed archbishop, and
-				Dimitri, the newly-crowned king of Faerghus, gave the people of Fódlan much to celebrate. The two were
-				devoted to improving life for the people and to seeking greater wisdom in order to reform the government
-				and the church from the inside out. As leaders of church and state respectively, at times they engaged
-				in heated debate. Even still, when enjoying a long horse ride or a quiet evening, they were not as the
-				world saw them, but rather two adoring spouses, desperately in love. They remained as such for the rest
-				of their days.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Claude">
-			<p>
-				Byleth x Claude
-				After ascending the throne as the first leader of the United Kingdom of Fódlan, Byleth sought to rebuild
-				the war-torn towns and villages and to help guide the reformation of the Church of Seiros. After a few
-				months of peace, remnants of the Imperial army joined with those who slither in the dark and marched
-				upon the capital city of Derdriu. The new kingdom lacked the power to repel the invaders, but when
-				defeat seemed imminent, a battle cry rang out from the east. Claude, the newly-crowned King of Almyra,
-				led a mighty army that broke through the rebel forces with ease. This show of solidarity forever altered
-				the course of history, heralding a new age of unity.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Rhea">
-			<p>
-				Byleth x Rhea
-				After finally saving both Fódlan and Rhea from crisis, Byleth ascended the throne as the first leader of
-				the United Kingdom of Fódlan. From his/her temporary residence at Garreg Mach Monastery, he/she
-				endeavored to restore and develop Fódlan. Having narrowly escaped death, Rhea took time to recover her
-				strength before returning to her role as archbishop. Upon her return, she applied herself to
-				rehabilitating the church and helping those who had suffered because of the war. Thereafter, the two
-				worked closely to forge new policies and achieve progress for Fódlan. The pair's collective work came to
-				be thought of as nothing short of miraculous.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Hubert">
-			<p>
-				Byleth x Hubert
-				After a fierce battle, Byleth and Edelgard finally brought the tyranny of a godlike being to an end.
-				Though wounded in the conflict and stripped of divine power, Byleth continued to fight alongside the
-				emperor to bring true peace. Hubert joined them in this fight, fulfilling his promise to confront those
-				who slither in the dark head-on. In that darkness, Byleth and Hubert formed an unbreakable bond. It is
-				said that, as a married couple, they were totally inseparable.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Dorothea">
-			<p>
-				Byleth x Dorothea
-				After ascending to the throne as the first leader of the United Kingdom of Fódlan, Byleth announced
-				his/her marriage to Dorothea. The former songstress resolved to stay out of the public eye, keeping to
-				herself and her family, but as Byleth worked tirelessly to restore Fódlan, she did offer advice from
-				time to time. It is said that her experience growing up as a commoner provided a useful perspective.
-				Many years later, her diary was uncovered, revealing the full extent of the happy life the couple
-				shared. The love poems that they wrote to one another were published as a collection.
+                Flayn disappeared soon after the war, and after a time, proof of her very existence faded from memory.
+                Many years later, a young woman appeared at the monastery, which had been restored to its former glory.
+                Speaking to no one in particular, it is said that she gazed at the entrance and reverently whispered, "I
+                am home."
+            </p>
+        </div>
+        <div class="filterDiv Seteth">
+            <p>
+                Seteth<br>
+                Seteth remained at the monastery and worked to restore the authority of the Church of Seiros. Doing away
+                with his old strictness, he adopted a tolerant stance toward all. His encouragement of believers to
+                respect those of other faiths helped the people of Fódlan to find common ground with others.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Edelgard">
+            <p>
+                Byleth x Edelgard<br>
+                Byleth and Edelgard ended the tyranny of a godlike being. Byleth was wounded and lost the power of the
+                progenitor god, but it mattered not, as he/she and Edelgard had each other. To ensure lasting peace, the
+                two fought against those who slither in the dark, and to ensure a society where people can rise and fall
+                by their own merits, they spent their lives reforming the antiquated class system. They achieved much in
+                their time together, and it is said that they were sometimes spotted leaving the palace to privately
+                enjoy the world they had created. How they spent those precious moments, none but the two of them will
+                ever know.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Dimitri">
+            <p>
+                Byleth x Dimitri<br>
+                Paired with the end of the war, the joyous marriage of Byleth, the newly-appointed archbishop, and
+                Dimitri, the newly-crowned king of Faerghus, gave the people of Fódlan much to celebrate. The two were
+                devoted to improving life for the people and to seeking greater wisdom in order to reform the government
+                and the church from the inside out. As leaders of church and state respectively, at times they engaged
+                in heated debate. Even still, when enjoying a long horse ride or a quiet evening, they were not as the
+                world saw them, but rather two adoring spouses, desperately in love. They remained as such for the rest
+                of their days.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Claude">
+            <p>
+                Byleth x Claude<br>
+                After ascending the throne as the first leader of the United Kingdom of Fódlan, Byleth sought to rebuild
+                the war-torn towns and villages and to help guide the reformation of the Church of Seiros. After a few
+                months of peace, remnants of the Imperial army joined with those who slither in the dark and marched
+                upon the capital city of Derdriu. The new kingdom lacked the power to repel the invaders, but when
+                defeat seemed imminent, a battle cry rang out from the east. Claude, the newly-crowned King of Almyra,
+                led a mighty army that broke through the rebel forces with ease. This show of solidarity forever altered
+                the course of history, heralding a new age of unity.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Rhea">
+            <p>
+                Byleth x Rhea<br>
+                After finally saving both Fódlan and Rhea from crisis, Byleth ascended the throne as the first leader of
+                the United Kingdom of Fódlan. From his/her temporary residence at Garreg Mach Monastery, he/she
+                endeavored to restore and develop Fódlan. Having narrowly escaped death, Rhea took time to recover her
+                strength before returning to her role as archbishop. Upon her return, she applied herself to
+                rehabilitating the church and helping those who had suffered because of the war. Thereafter, the two
+                worked closely to forge new policies and achieve progress for Fódlan. The pair's collective work came to
+                be thought of as nothing short of miraculous.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Hubert">
+            <p>
+                Byleth x Hubert<br>
+                After a fierce battle, Byleth and Edelgard finally brought the tyranny of a godlike being to an end.
+                Though wounded in the conflict and stripped of divine power, Byleth continued to fight alongside the
+                emperor to bring true peace. Hubert joined them in this fight, fulfilling his promise to confront those
+                who slither in the dark head-on. In that darkness, Byleth and Hubert formed an unbreakable bond. It is
+                said that, as a married couple, they were totally inseparable.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Dorothea">
+            <p>
+                Byleth x Dorothea<br>
+                After ascending to the throne as the first leader of the United Kingdom of Fódlan, Byleth announced
+                his/her marriage to Dorothea. The former songstress resolved to stay out of the public eye, keeping to
+                herself and her family, but as Byleth worked tirelessly to restore Fódlan, she did offer advice from
+                time to time. It is said that her experience growing up as a commoner provided a useful perspective.
+                Many years later, her diary was uncovered, revealing the full extent of the happy life the couple
+                shared. The love poems that they wrote to one another were published as a collection.
+                <br>
+                After taking on the role of archbishop of the Church of Seiros, Byleth announced his/her marriage to
+                Dorothea. The former songstress resolved to stay out of the public eye, keeping to herself and her
+                family, but as the archbishop worked tirelessly to restore Fódlan and the church, she did privately
+                offer advice from time to time. It is said that her experience growing up as a commoner provided a
+                useful perspective. Many years later, her diary was uncovered, revealing the full extent of the happy
+                life the couple shared. The love poems that they wrote to one another were published as a collection.
+                <br>
+                Almost immediately after the modest wedding ceremony between Byleth and Dorothea was over, the battle
+                against those who slither in the dark began in earnest. Dorothea chose not to take the field of battle
+                with a weapon but rather to tend the household in her spouse's absence and provide emotional support to
+                his/her effort to bring lasting peace to Fódlan. Many years after the war had ended, Dorothea's diary
+                was uncovered, revealing the full extent of the happy life the couple shared. The love poems that they
+                wrote to one another were published as a collection.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Ferdinand">
+            <p>
+                Byleth x Ferdinand<br>
+                After ascending to the throne as the first leader of the United Kingdom of Fódlan, Byleth announced her
+                marriage to Ferdinand, who had assumed his inherited position as Duke Aegir. Ferdinand overcame a slew
+                of obstacles to reform his territory and that of House Hrym. He chose not to accept an official position
+                in service to Byleth, instead advising her only informally as a spouse. History books extol Ferdinand's
+                success as a lord of his territories, but make no mention of his marriage. Thus, half of his life's work
+                is lost to time.
+                <br>
+                After taking her place as the new archbishop of the Church of Seiros, Byleth announced her marriage to
+                Ferdinand, who had assumed his place as Duke Aegir. The archbishop's husband overcame a slew of
+                obstacles to reform his family's territory and Hrym but took no official position with the church,
+                providing only guidance and support in his capacity as a loving spouse. History books extol Ferdinand's
+                success as a lord of his territories, but they make no mention of his marriage to the archbishop. Thus,
+                half of his life's work is lost to time.
+                <br>
+                Byleth and Ferdinand celebrated their marriage with a lavish wedding, but almost immediately afterward,
+                the battle with those who slither in the dark began in earnest. After being named Duke Aegir, Ferdinand
+                overcame a slew of obstacles to help House Hrym and his family's territory recover. At the same time, he
+                fought alongside his spouse for a true, lasting peace in Fódlan. History books extol Ferdinand's success
+                as a lord of his territories, but they do not make mention of the hard-fought battles he endured
+                alongside his wife. Thus, half of his life's work is lost to time.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Bernadetta">
+            <p>
+                Byleth x Bernadetta<br>
+                After ascending to the throne as the first leader of the United Kingdom of Fódlan, Byleth announced
+                his/her marriage to Bernadetta. Many were concerned that the new leader of House Varley would do little
+                more than hide, but she in fact followed the new king wherever he went and provided him with constant
+                counsel. She never did overcome her shyness, however, and it is said that aspiring advisers who
+                frightened her were quickly turned away. Because the ones she liked performed well in their service to
+                the people, Bernadetta was widely believed to have a discerning eye.
+                <br>
+                After taking on the role of archbishop of the Church of Seiros, Byleth announced his/her marriage to
+                Bernadetta. Many were concerned that the new leader of House Varley would do little more than hide, but
+                she in fact followed the archbishop wherever he went and provided him with constant counsel. She never
+                did overcome her shyness, however, and it is said that aspiring advisers who frightened her were quickly
+                turned away. Because the ones she liked performed well in their service to the church, Bernadetta was
+                widely believed to have a discerning eye.
+                <br>
+                Almost as soon as Byleth and Bernadetta were finally wed, the battle against those who slither in the
+                dark began in earnest. Many were concerned that the new leader of House Varley would do little more than
+                hide, but she fell in alongside her husband and followed him everywhere, fighting to bring lasting peace
+                to Fódlan. Forced to throw herself into one terrifying battle after another, Bernadetta developed such a
+                tough character, it is said that absolutely nothing could frighten her.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Caspar">
+            <p>
+                Byleth x Caspar<br>
+                After ascending to the throne as the first leader of the United Kingdom of Fódlan, Byleth announced
+                his/her marriage to Caspar. But Caspar, never one to sit still for long, set out on a journey of
+                self-discovery. He traveled to every corner of Fódlan and even took Byleth along on occasion. It is said
+                that he got into mischief at every turn, and that his wife sometimes had to invoke her authority to
+                defuse the situation, but that the victims of his antics always came away more amused than harmed or
+                offended in the end. The stories of their travels were remembered fondly for generations.
+                <br>
+                After taking on the role of archbishop of the Church of Seiros, Byleth announced his/her marriage to
+                Caspar. But Caspar, never one to sit still for long, set out on a journey of self-discovery. He traveled
+                to every corner of Fódlan and occasionally even took the archbishop along. It is said that he got into
+                mischief at every turn, and that the archbishop sometimes had to invoke her authority to calm things
+                down, but that the victims of his antics always came away more amused than harmed or offended in the
+                end. The stories of their travels were remembered fondly for generations.
+                <br>
+                Almost immediately after Byleth and Caspar had celebrated their marriage in style, the battle against
+                those who slither in the dark began in earnest. As the new Minister of Military Affairs, Caspar worked
+                with Byleth to command the Imperial army and bring peace to Fódlan. His impulsive bravery, tempered by
+                his spouse's more level head, proved instrumental to victory in a great many battles. Their troops
+                became known most of all for their ability to laugh in the face of danger.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Petra">
+            <p>
+                Byleth x Petra<br>
+                After ascending the throne as the first leader of the United Kingdom of Fódlan, Byleth announced his
+                marriage to Petra. In light of her love for her spouse and her unique position to act as a bridge
+                between the two regions, Petra entrusted her homeland's throne to her family and remained in Fódlan.
+                Together, the two worked hard to restore Fódlan and improve relations with Brigid. The foreign royal was
+                initially met with skepticism, but in time, the people of Fódlan accepted and adored Petra. Thanks to
+                their efforts, in the distant future, the two lands were eventually as one.
+                <br>
+                After becoming the new archbishop of the Church of Seiros, Byleth announced his marriage to Petra. In
+                light of her love for her spouse and her unique position to act as a bridge between the two regions,
+                Petra entrusted her homeland's throne to her family and remained in Fódlan. Together, the two worked
+                hard to restore Fódlan and improve relations with Brigid. The foreign royal was initially met with
+                skepticism, but in time, the people of Fódlan accepted and adored Petra. Thanks to their efforts, in the
+                distant future, the two lands were eventually as one.
+                <br>
+                As Byleth set out to fight those who slither in the dark, Petra left the throne of Brigid to her family
+                to follow him. The pair fought many hard battles together against this terrifying enemy before finally
+                emerging victorious after the long war. Finally able to breathe easy, they took up residence in the city
+                of Nuvelle, which lies on the western fringe of Fódlan, where they enjoyed the same waters that touch
+                her homeland of Brigid. As their love grew, so did their mastery of each other's native
+                language.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Linhardt">
+            <p>
+                Byleth x Linhardt<br>
+                After ascending to the throne as the first leader of the United Kingdom of Fódlan, Byleth announced
+                his/her marriage to Linhardt. The people of Fódlan placed high expectations on their leader's spouse,
+                but to their consternation, Linhardt spent most of his time fishing, relaxing, and researching Crests.
+                Fortunes turned when Byleth discovered a document, hidden away on Linhardt's desk, which provided a
+                ground-breaking discovery. Cast unwittingly into prominence, Linhardt was put to work in earnest. In
+                return for his service, he demanded longer naps in the company of his spouse.
+                <br>
+                After taking on the role of archbishop of the Church of Seiros, Byleth announced his/her marriage to
+                Linhardt. The people placed high expectations on him, but to their consternation, Linhardt spent most of
+                his time fishing, relaxing, and researching Crests. Fortunes turned when Byleth discovered a document
+                containing a ground-breaking discovery hidden away on Linhardt's desk. Cast unwittingly into prominence,
+                Linhardt was put to work in earnest. In return for his service to the church, he demanded longer naps
+                with the archbishop.
+                <br>
+                Though grateful for the end of the war, Byleth and Linhardt were disappointed to see that there was no
+                time to relax. The fight against those who slither in the dark began immediately, and Linhardt abandoned
+                his territory to help fight for a world of peace and quiet. Though the struggle was bitter, he took
+                heart in the knowledge that once it was over, he and Byleth could spend the rest of their days in
+                leisure, chasing idle pursuits far away from the stage of battle.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Dedue">
+            <p>
+                Byleth x Dedue<br>
+                A year after Byleth was appointed to succeed Rhea as the new archbishop, she announced her marriage to
+                Dedue, who had resigned his position as the king's vassal. Their wedding ceremony, brightly colored with
+                all of the most beautiful flowers from Duscur, set the tone for their happy life together. Dedue served
+                as an intermediary between Faerghus and the church and—alongside the archbishop—committed to improve
+                relations with foreign nations as part of the rebuilding effort. In their later years, they retired to
+                the Duscur Peninsula where they spent the remainder of their lives gardening in peace and quiet.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Felix">
+            <p>
+                Byleth x Felix<br>
+                Byleth married Felix almost immediately after ascending the throne of the United Kingdom of Fódlan. When
+                it came to matters of governance, Felix often took on duties that would have required his wife to dirty
+                her hands and thus came to be called The Royal Sword. After they accomplished all they had set out to
+                do, the couple left the rule of Fódlan to the next generation, disappearing into obscurity with blades
+                in hand. Thereafter, history only provides unconfirmed reports of a pair of traveling mercenaries who
+                possessed unmatched strength and skill.
+                <br>
+                Byleth married Felix, who had become Duke Fraldarius, shortly after she was named to succeed Rhea as
+                archbishop. Felix focused his efforts on restoring his territory and the Kingdom and became the
+                archbishop's closest confidant, both privately and officially. They often spent a lot of time apart, but
+                whenever they reunited, they had a tradition of crossing blades before crossing words. Attendants
+                remarked that the smiles they wore on their faces during these bouts were never seen elsewhere.
+                <br>
+                Byleth and Felix were engaged to be married soon after the Battle of Fhirdiad. The war against those who
+                slither in the dark was long and arduous, but they found solace always in one another. When the fighting
+                was finally done, they held a modest wedding ceremony and entered a new life together as husband and
+                wife. Where they went afterward is not known, but it is widely believed that they traveled the world as
+                mercenaries, side by side, blades in hand.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Mercedes">
+            <p>
+                Byleth x Mercedes<br>
+                Byleth announced his/her marriage to Mercedes shortly after becoming leader of the United Kingdom of
+                Fódlan. Mercedes ensured that Fódlan paid special attention, in its rebuilding effort, to folks who had
+                lost jobs and to children who had lost their families due to the war. The couple was said to mingle
+                frequently among the people, working up a sweat right alongside them. They happily spent their lives
+                ushering in a new era.
+                <br>
+                Byleth announced his/her marriage to Mercedes shortly after being named archbishop of the Church of
+                Seiros. Mercedes took on duties as a cleric and through that work ensured that the church offered
+                special support to children who had lost their families due to the war. The couple was said to mingle
+                frequently among the people, working up a sweat right alongside them. They happily spent their lives
+                ushering in a new era.
+                <br>
+                Byleth and Mercedes wed in haste, that they might better focus on their battle against those who slither
+                in the dark. The struggle was long and arduous, but their passionate love supported them through it.
+                When at last the fight was done, they moved to a small village in the Faerghus region and started an
+                orphanage. There they took in and raised children who had lost their families in the war, regardless of
+                their blood or circumstances of birth. It is said that Mercedes was never happier than when she was
+                surrounded by smiling children, free of all worry.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Ashe">
+            <p>
+                Byleth x Ashe<br>
+                When Byleth ascended the throne of the United Kingdom of Fódlan, Ashe served the new leader
+                faithfully—first as a knight and aide, and later as a husband. The queen, with help from the Church of
+                Seiros, put much toward the rebuilding effort with particular attention paid to relief for orphans in
+                the form of food, beds, and even schooling. It is said that these compassionate deeds were all Ashe's
+                suggestions, but the modest knight always gave the credit to his beloved wife.
+                <br>
+                When Byleth became the new archbishop of the Church of Seiros, Ashe served her faithfully—first as a
+                knight and aide, and later as a husband. With help from Faerghus, the archbishop put much toward the
+                rebuilding effort with particular attention paid to relief for orphans in the form of food, beds, and
+                even schooling. It is said that these compassionate deeds were all Ashe's suggestions, but the modest
+                knight always gave the credit to his beloved wife.
+                <br>
+                Byleth and Ashe, after seeing the war through to its end, continued the fight against those who slither
+                in the dark. Supporting one another through that long, hard fight grew their love until they became
+                totally inseparable. When the fight was finally done, they departed together on a journey to heal the
+                world, one person at a time. No records exist of their journey, but the legend of this loving and
+                charitable couple lives on in folktales.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Annette">
+            <p>
+                Byleth x Annette<br>
+                After ascending the throne as the first leader of the United Kingdom of Fódlan, Byleth announced his
+                marriage to Annette. His wife actively contributed to his endeavors, and it is said that her wisdom was
+                heavily relied upon during Fódlan's restoration and development. Despite her lofty position, she was
+                known to occasionally step in as a guest speaker at the Royal School of Sorcery, where she educated many
+                renowned sages. Though her talents were widely respected, it is said she was always a bit
+                accident-prone. Charming tales endure of her husband saving her from countless kitchen explosions, but
+                it is unknown whether these are fact or purely fiction.
+                <br>
+                After becoming the new archbishop of the Church of Seiros, Byleth announced his marriage to Annette. His
+                wife actively contributed to his endeavors, and it is said that her wisdom was heavily relied upon
+                during Fódlan's restoration and development. Despite her lofty position, she was known to occasionally
+                step in as a guest speaker at the Royal School of Sorcery, where she educated many renowned sages.
+                Though her talents were widely respected, it is said she was a bit accident-prone. Charming tales endure
+                of her husband saving her from countless kitchen explosions, but it is unknown whether these are fact or
+                purely fiction.
+                <br>
+                When the fighting was over and the Officers Academy was reopened, Byleth was reinstated as a professor.
+                His wife, Annette, took on a position alongside him teaching sorcery, and the couple spent many years
+                educating and guiding generations of students. In their later years, they attempted to retire to a quiet
+                life in a village near Annette's hometown. That quickly proved to be too quiet of a life for them, and
+                so they opened up a local school and resumed teaching. They continued on as educators until the end of
+                their long and happy lives.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Sylvain">
+            <p>
+                Byleth x Sylvain<br>
+                After ascending the throne as the first leader of the United Kingdom of Fódlan, Byleth announced her
+                marriage to Sylvain, who had become the new Margrave Gautier. Sylvain was a valued ally who assisted his
+                wife in her new role, both publicly and privately. Most of all, it is said that his cunning manner of
+                speech was a great asset for fostering relations between the Church of Seiros, Fódlan, and surrounding
+                regions. Though known as a philanderer in youth, Sylvain happily settled down after marriage and became
+                a gentle and devoted husband and father. The two had many children whom they doted on equally,
+                regardless of whether or not they bore a Crest.
+                <br>
+                After becoming the new archbishop of the Church of Seiros, Byleth announced her marriage to Sylvain,
+                heir to House Gautier. Sylvain was a valued ally who assisted his wife in her new role, both publicly
+                and privately. He achieved a great deal, including fostering relations with Faerghus and helping to
+                institute sweeping organizational changes within the church. Though known as a philanderer in youth,
+                Sylvain happily settled down after marriage. By the time he inherited the title of Margrave Gautier, he
+                was a gentle and devoted husband. It is said that those who knew him in his youth wondered what sort of
+                spell the archbishop had cast on him.
+                <br>
+                When the fighting was over, Byleth and Sylvain were married. As the new leaders of House Gautier, they
+                focused their efforts on the restoration of northern Fódlan, which had been deeply scarred by the
+                ravages of war. Once this task was complete, they set their sights on improving relations with the Sreng
+                people in an effort to remove the perceived need for the power of Crests. This accomplishment took a
+                great deal of hard work, but the two refused to give up on their ideals. In time, the two had a large
+                and loving family. They lived happily and loved their children equally, regardless of whether or not
+                they bore a Crest.
 
-				After taking on the role of archbishop of the Church of Seiros, Byleth announced his/her marriage to
-				Dorothea. The former songstress resolved to stay out of the public eye, keeping to herself and her
-				family, but as the archbishop worked tirelessly to restore Fódlan and the church, she did privately
-				offer advice from time to time. It is said that her experience growing up as a commoner provided a
-				useful perspective. Many years later, her diary was uncovered, revealing the full extent of the happy
-				life the couple shared. The love poems that they wrote to one another were published as a collection.
-
-				Almost immediately after the modest wedding ceremony between Byleth and Dorothea was over, the battle
-				against those who slither in the dark began in earnest. Dorothea chose not to take the field of battle
-				with a weapon but rather to tend the household in her spouse's absence and provide emotional support to
-				his/her effort to bring lasting peace to Fódlan. Many years after the war had ended, Dorothea's diary
-				was uncovered, revealing the full extent of the happy life the couple shared. The love poems that they
-				wrote to one another were published as a collection.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Ferdinand">
-			<p>
-				Byleth x Ferdinand
-				After ascending to the throne as the first leader of the United Kingdom of Fódlan, Byleth announced her
-				marriage to Ferdinand, who had assumed his inherited position as Duke Aegir. Ferdinand overcame a slew
-				of obstacles to reform his territory and that of House Hrym. He chose not to accept an official position
-				in service to Byleth, instead advising her only informally as a spouse. History books extol Ferdinand's
-				success as a lord of his territories, but make no mention of his marriage. Thus, half of his life's work
-				is lost to time.
-
-				After taking her place as the new archbishop of the Church of Seiros, Byleth announced her marriage to
-				Ferdinand, who had assumed his place as Duke Aegir. The archbishop's husband overcame a slew of
-				obstacles to reform his family's territory and Hrym but took no official position with the church,
-				providing only guidance and support in his capacity as a loving spouse. History books extol Ferdinand's
-				success as a lord of his territories, but they make no mention of his marriage to the archbishop. Thus,
-				half of his life's work is lost to time.
-
-				Byleth and Ferdinand celebrated their marriage with a lavish wedding, but almost immediately afterward,
-				the battle with those who slither in the dark began in earnest. After being named Duke Aegir, Ferdinand
-				overcame a slew of obstacles to help House Hrym and his family's territory recover. At the same time, he
-				fought alongside his spouse for a true, lasting peace in Fódlan. History books extol Ferdinand's success
-				as a lord of his territories, but they do not make mention of the hard-fought battles he endured
-				alongside his wife. Thus, half of his life's work is lost to time.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Bernadetta">
-			<p>
-				Byleth x Bernadetta
-				After ascending to the throne as the first leader of the United Kingdom of Fódlan, Byleth announced
-				his/her marriage to Bernadetta. Many were concerned that the new leader of House Varley would do little
-				more than hide, but she in fact followed the new king wherever he went and provided him with constant
-				counsel. She never did overcome her shyness, however, and it is said that aspiring advisers who
-				frightened her were quickly turned away. Because the ones she liked performed well in their service to
-				the people, Bernadetta was widely believed to have a discerning eye.
-				
-				After taking on the role of archbishop of the Church of Seiros, Byleth announced his/her marriage to
-				Bernadetta. Many were concerned that the new leader of House Varley would do little more than hide, but
-				she in fact followed the archbishop wherever he went and provided him with constant counsel. She never
-				did overcome her shyness, however, and it is said that aspiring advisers who frightened her were quickly
-				turned away. Because the ones she liked performed well in their service to the church, Bernadetta was
-				widely believed to have a discerning eye.
-
-				Almost as soon as Byleth and Bernadetta were finally wed, the battle against those who slither in the
-				dark began in earnest. Many were concerned that the new leader of House Varley would do little more than
-				hide, but she fell in alongside her husband and followed him everywhere, fighting to bring lasting peace
-				to Fódlan. Forced to throw herself into one terrifying battle after another, Bernadetta developed such a
-				tough character, it is said that absolutely nothing could frighten her.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Caspar">
-			<p>
-				Byleth x Caspar
-				After ascending to the throne as the first leader of the United Kingdom of Fódlan, Byleth announced
-				his/her marriage to Caspar. But Caspar, never one to sit still for long, set out on a journey of
-				self-discovery. He traveled to every corner of Fódlan and even took Byleth along on occasion. It is said
-				that he got into mischief at every turn, and that his wife sometimes had to invoke her authority to
-				defuse the situation, but that the victims of his antics always came away more amused than harmed or
-				offended in the end. The stories of their travels were remembered fondly for generations.
-
-				After taking on the role of archbishop of the Church of Seiros, Byleth announced his/her marriage to
-				Caspar. But Caspar, never one to sit still for long, set out on a journey of self-discovery. He traveled
-				to every corner of Fódlan and occasionally even took the archbishop along. It is said that he got into
-				mischief at every turn, and that the archbishop sometimes had to invoke her authority to calm things
-				down, but that the victims of his antics always came away more amused than harmed or offended in the
-				end. The stories of their travels were remembered fondly for generations.
-
-				Almost immediately after Byleth and Caspar had celebrated their marriage in style, the battle against
-				those who slither in the dark began in earnest. As the new Minister of Military Affairs, Caspar worked
-				with Byleth to command the Imperial army and bring peace to Fódlan. His impulsive bravery, tempered by
-				his spouse's more level head, proved instrumental to victory in a great many battles. Their troops
-				became known most of all for their ability to laugh in the face of danger.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Petra">
-			<p>
-				Byleth x Petra
-				After ascending the throne as the first leader of the United Kingdom of Fódlan, Byleth announced his
-				marriage to Petra. In light of her love for her spouse and her unique position to act as a bridge
-				between the two regions, Petra entrusted her homeland's throne to her family and remained in Fódlan.
-				Together, the two worked hard to restore Fódlan and improve relations with Brigid. The foreign royal was
-				initially met with skepticism, but in time, the people of Fódlan accepted and adored Petra. Thanks to
-				their efforts, in the distant future, the two lands were eventually as one.
-
-				After becoming the new archbishop of the Church of Seiros, Byleth announced his marriage to Petra. In
-				light of her love for her spouse and her unique position to act as a bridge between the two regions,
-				Petra entrusted her homeland's throne to her family and remained in Fódlan. Together, the two worked
-				hard to restore Fódlan and improve relations with Brigid. The foreign royal was initially met with
-				skepticism, but in time, the people of Fódlan accepted and adored Petra. Thanks to their efforts, in the
-				distant future, the two lands were eventually as one.
-				
-				As Byleth set out to fight those who slither in the dark, Petra left the throne of Brigid to her family
-				to follow him. The pair fought many hard battles together against this terrifying enemy before finally
-				emerging victorious after the long war. Finally able to breathe easy, they took up residence in the city
-				of Nuvelle, which lies on the western fringe of Fódlan, where they enjoyed the same waters that touch
-				her homeland of Brigid. As their love grew, so did their mastery of each other's native
-				language.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Linhardt">
-			<p>
-				Byleth x Linhardt
-				After ascending to the throne as the first leader of the United Kingdom of Fódlan, Byleth announced
-				his/her marriage to Linhardt. The people of Fódlan placed high expectations on their leader's spouse,
-				but to their consternation, Linhardt spent most of his time fishing, relaxing, and researching Crests.
-				Fortunes turned when Byleth discovered a document, hidden away on Linhardt's desk, which provided a
-				ground-breaking discovery. Cast unwittingly into prominence, Linhardt was put to work in earnest. In
-				return for his service, he demanded longer naps in the company of his spouse.
-
-				After taking on the role of archbishop of the Church of Seiros, Byleth announced his/her marriage to
-				Linhardt. The people placed high expectations on him, but to their consternation, Linhardt spent most of
-				his time fishing, relaxing, and researching Crests. Fortunes turned when Byleth discovered a document
-				containing a ground-breaking discovery hidden away on Linhardt's desk. Cast unwittingly into prominence,
-				Linhardt was put to work in earnest. In return for his service to the church, he demanded longer naps
-				with the archbishop.
-
-				Though grateful for the end of the war, Byleth and Linhardt were disappointed to see that there was no
-				time to relax. The fight against those who slither in the dark began immediately, and Linhardt abandoned
-				his territory to help fight for a world of peace and quiet. Though the struggle was bitter, he took
-				heart in the knowledge that once it was over, he and Byleth could spend the rest of their days in
-				leisure, chasing idle pursuits far away from the stage of battle.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Dedue">
-			<p>
-				Byleth x Dedue
-				A year after Byleth was appointed to succeed Rhea as the new archbishop, she announced her marriage to
-				Dedue, who had resigned his position as the king's vassal. Their wedding ceremony, brightly colored with
-				all of the most beautiful flowers from Duscur, set the tone for their happy life together. Dedue served
-				as an intermediary between Faerghus and the church and—alongside the archbishop—committed to improve
-				relations with foreign nations as part of the rebuilding effort. In their later years, they retired to
-				the Duscur Peninsula where they spent the remainder of their lives gardening in peace and quiet.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Felix">
-			<p>
-				Byleth x Felix
-				Byleth married Felix almost immediately after ascending the throne of the United Kingdom of Fódlan. When
-				it came to matters of governance, Felix often took on duties that would have required his wife to dirty
-				her hands and thus came to be called The Royal Sword. After they accomplished all they had set out to
-				do, the couple left the rule of Fódlan to the next generation, disappearing into obscurity with blades
-				in hand. Thereafter, history only provides unconfirmed reports of a pair of traveling mercenaries who
-				possessed unmatched strength and skill.
-
-				Byleth married Felix, who had become Duke Fraldarius, shortly after she was named to succeed Rhea as
-				archbishop. Felix focused his efforts on restoring his territory and the Kingdom and became the
-				archbishop's closest confidant, both privately and officially. They often spent a lot of time apart, but
-				whenever they reunited, they had a tradition of crossing blades before crossing words. Attendants
-				remarked that the smiles they wore on their faces during these bouts were never seen elsewhere.
-				
-				Byleth and Felix were engaged to be married soon after the Battle of Fhirdiad. The war against those who
-				slither in the dark was long and arduous, but they found solace always in one another. When the fighting
-				was finally done, they held a modest wedding ceremony and entered a new life together as husband and
-				wife. Where they went afterward is not known, but it is widely believed that they traveled the world as
-				mercenaries, side by side, blades in hand.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Mercedes">
-			<p>
-				Byleth x Mercedes
-				Byleth announced his/her marriage to Mercedes shortly after becoming leader of the United Kingdom of
-				Fódlan. Mercedes ensured that Fódlan paid special attention, in its rebuilding effort, to folks who had
-				lost jobs and to children who had lost their families due to the war. The couple was said to mingle
-				frequently among the people, working up a sweat right alongside them. They happily spent their lives
-				ushering in a new era.
-
-				Byleth announced his/her marriage to Mercedes shortly after being named archbishop of the Church of
-				Seiros. Mercedes took on duties as a cleric and through that work ensured that the church offered
-				special support to children who had lost their families due to the war. The couple was said to mingle
-				frequently among the people, working up a sweat right alongside them. They happily spent their lives
-				ushering in a new era.
-
-				Byleth and Mercedes wed in haste, that they might better focus on their battle against those who slither
-				in the dark. The struggle was long and arduous, but their passionate love supported them through it.
-				When at last the fight was done, they moved to a small village in the Faerghus region and started an
-				orphanage. There they took in and raised children who had lost their families in the war, regardless of
-				their blood or circumstances of birth. It is said that Mercedes was never happier than when she was
-				surrounded by smiling children, free of all worry.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Ashe">
-			<p>
-				Byleth x Ashe
-				When Byleth ascended the throne of the United Kingdom of Fódlan, Ashe served the new leader
-				faithfully—first as a knight and aide, and later as a husband. The queen, with help from the Church of
-				Seiros, put much toward the rebuilding effort with particular attention paid to relief for orphans in
-				the form of food, beds, and even schooling. It is said that these compassionate deeds were all Ashe's
-				suggestions, but the modest knight always gave the credit to his beloved wife.
-
-				When Byleth became the new archbishop of the Church of Seiros, Ashe served her faithfully—first as a
-				knight and aide, and later as a husband. With help from Faerghus, the archbishop put much toward the
-				rebuilding effort with particular attention paid to relief for orphans in the form of food, beds, and
-				even schooling. It is said that these compassionate deeds were all Ashe's suggestions, but the modest
-				knight always gave the credit to his beloved wife.
-
-				Byleth and Ashe, after seeing the war through to its end, continued the fight against those who slither
-				in the dark. Supporting one another through that long, hard fight grew their love until they became
-				totally inseparable. When the fight was finally done, they departed together on a journey to heal the
-				world, one person at a time. No records exist of their journey, but the legend of this loving and
-				charitable couple lives on in folktales.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Annette">
-			<p>
-				Byleth x Annette
-				After ascending the throne as the first leader of the United Kingdom of Fódlan, Byleth announced his
-				marriage to Annette. His wife actively contributed to his endeavors, and it is said that her wisdom was
-				heavily relied upon during Fódlan's restoration and development. Despite her lofty position, she was
-				known to occasionally step in as a guest speaker at the Royal School of Sorcery, where she educated many
-				renowned sages. Though her talents were widely respected, it is said she was always a bit
-				accident-prone. Charming tales endure of her husband saving her from countless kitchen explosions, but
-				it is unknown whether these are fact or purely fiction.
-
-				After becoming the new archbishop of the Church of Seiros, Byleth announced his marriage to Annette. His
-				wife actively contributed to his endeavors, and it is said that her wisdom was heavily relied upon
-				during Fódlan's restoration and development. Despite her lofty position, she was known to occasionally
-				step in as a guest speaker at the Royal School of Sorcery, where she educated many renowned sages.
-				Though her talents were widely respected, it is said she was a bit accident-prone. Charming tales endure
-				of her husband saving her from countless kitchen explosions, but it is unknown whether these are fact or
-				purely fiction.
-
-				When the fighting was over and the Officers Academy was reopened, Byleth was reinstated as a professor.
-				His wife, Annette, took on a position alongside him teaching sorcery, and the couple spent many years
-				educating and guiding generations of students. In their later years, they attempted to retire to a quiet
-				life in a village near Annette's hometown. That quickly proved to be too quiet of a life for them, and
-				so they opened up a local school and resumed teaching. They continued on as educators until the end of
-				their long and happy lives.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Sylvain">
-			<p>
-				Byleth x Sylvain
-				After ascending the throne as the first leader of the United Kingdom of Fódlan, Byleth announced her
-				marriage to Sylvain, who had become the new Margrave Gautier. Sylvain was a valued ally who assisted his
-				wife in her new role, both publicly and privately. Most of all, it is said that his cunning manner of
-				speech was a great asset for fostering relations between the Church of Seiros, Fódlan, and surrounding
-				regions. Though known as a philanderer in youth, Sylvain happily settled down after marriage and became
-				a gentle and devoted husband and father. The two had many children whom they doted on equally,
-				regardless of whether or not they bore a Crest.
-
-				After becoming the new archbishop of the Church of Seiros, Byleth announced her marriage to Sylvain,
-				heir to House Gautier. Sylvain was a valued ally who assisted his wife in her new role, both publicly
-				and privately. He achieved a great deal, including fostering relations with Faerghus and helping to
-				institute sweeping organizational changes within the church. Though known as a philanderer in youth,
-				Sylvain happily settled down after marriage. By the time he inherited the title of Margrave Gautier, he
-				was a gentle and devoted husband. It is said that those who knew him in his youth wondered what sort of
-				spell the archbishop had cast on him.
-
-				When the fighting was over, Byleth and Sylvain were married. As the new leaders of House Gautier, they
-				focused their efforts on the restoration of northern Fódlan, which had been deeply scarred by the
-				ravages of war. Once this task was complete, they set their sights on improving relations with the Sreng
-				people in an effort to remove the perceived need for the power of Crests. This accomplishment took a
-				great deal of hard work, but the two refused to give up on their ideals. In time, the two had a large
-				and loving family. They lived happily and loved their children equally, regardless of whether or not
-				they bore a Crest.
-
-			</p>
-		</div>
-		<div class="filterDiv Byleth Ingrid">
-			<p>
-				Byleth x Ingrid
-				Byleth announced his/her marriage to Ingrid shortly after becoming leader of the United Kingdom of
-				Fódlan. Together they made great strides toward restoring Fódlan to its former glory and beyond. Though
-				Ingrid contributed to the court in her position as queen, she also famously guarded her king in a
-				physical capacity. Most well-known is how the "Warrior Queen" drew her own weapon to repel an assassin's
-				blade meant for her husband, a tale which lived on in chivalric storybooks for generations.
-
-				Byleth announced his/her marriage to Ingrid shortly after succeeding Rhea as the new archbishop.
-				Together they made great strides in helping to restore the Kingdom of Fódlan to its former glory and
-				beyond. Though Ingrid provided counsel to the archbishop as his wife, she also earned renown as a Holy
-				Knight of Seiros. Most famously, she parried an insurgent's blade with her own weapon just before it
-				struck the archbishop's neck. Tales of the archbishop who ended the long war, and his valiant wife
-				Ingrid, lived on in storybooks for generations.
-
-				When the war at last came to an end, Byleth and his wife, Ingrid, relocated to her hometown. Galatea
-				territory had been seized by the Empire, but the emperor granted Ingrid's request to retain governance
-				of it. She and her husband were initially received with skepticism, but together they worked hard to
-				reform the territory and address its food shortages. Through hard work, pure grit, and a truly knightly
-				dedication to the people, they were able to transform the barren landscape into what would, decades
-				later, become known as the most fertile grounds in all of Fódlan.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Hilda">
-			<p>
-				Byleth x Hilda
-				Byleth announced his/her marriage to Hilda shortly after becoming leader of the United Kingdom of
-				Fódlan. As queen, Hilda rarely took part in politics herself, but she nevertheless contributed greatly
-				to the restoration of Fódlan by recommending exceptional people to influential positions. Her hobby of
-				creating fashionable accessories also bore fruit, as her designs achieved widespread popularity, and she
-				created the first artisan academy in Fódlan. The school produced many talented craftsmen, one of whom
-				created a statue that expertly captured the king's delight at receiving the gift of a bracelet from the
-				queen.
-
-				Byleth announced his/her marriage to Hilda shortly after being named archbishop of the Church of Seiros.
-				Hilda rarely involved herself with the church, but nevertheless contributed greatly to its restoration
-				by recommending exceptional people to influential positions. Her hobby of creating fashionable
-				accessories also bore fruit, as her designs achieved widespread popularity, and she started an artisan
-				academy at Garreg Mach. The school produced many talented craftsmen, one of whom created a statue that
-				expertly captured the archbishop's delight at receiving the gift of a bracelet from his wife.
-
-				Almost immediately after Byleth and Hilda finished their gorgeous wedding ceremony, the struggle against
-				those who slither in the dark began in earnest. They fought tirelessly to bring lasting peace to Fódlan,
-				and afterward retired from the Imperial army to Goneril territory. Hilda's hobby of creating fashionable
-				accessories bore fruit, and she leveraged her husband's reputation as a hero to create the first artisan
-				academy in Fódlan. The school produced many talented craftsmen, one of whom created a statue that
-				expertly captured the hero's delight at receiving the gift of a bracelet from his wife.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Lorenz">
-			<p>
-				Byleth x Lorenz
-				Byleth announced his/her marriage to Lorenz shortly after becoming leader of the United Kingdom of
-				Fódlan. Lorenz took equally well to his dual roles as the queen's husband and the leader of House
-				Gloucester, working simultaneously to restore his own territory and to advance the development of Fódlan
-				at large. Because his policies were of particular benefit to the commonfolk, he was well loved, and came
-				to be called the Lord of Roses. After many years of peace, Lorenz grew ill and withdrew from the public
-				eye. The queen followed, entrusting the throne to the prince. It is said that he was the spitting image
-				of his father.
-
-				Byleth announced his/her marriage to Lorenz shortly after being named archbishop of the Church of
-				Seiros. Lorenz took equally well to his dual roles as the archbishop's husband and the leader of House
-				Gloucester, working simultaneously to restore his own territory and to support the church's efforts to
-				restore Fódlan at large. Because his policies were of particular benefit to the commonfolk, he was well
-				loved, and the church's authority was restored as a result. After many years of peace, Lorenz and the
-				archbishop resigned their positions, entrusting rule of House Gloucester to their son. It is said that
-				he was the spitting image of his father.
-
-				Soon after Byleth and Lorenz had celebrated their marriage in style, the battle against those who
-				slither in the dark began in earnest. After fighting hard to bring true peace to Fódlan, Lorenz took
-				over as head of House Gloucester, and he and his wife focused their efforts on restoring the territory.
-				They had an active political and military life over the years, working together to overcome many
-				hardships. After decades of dedicated service to the people, Lorenz grew weak and retired. Byleth
-				followed suit, and they entrusted House Gloucester to their son. It is said that he was the spitting
-				image of his father, right down to his signature red rose.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Raphael">
-			<p>
-				Byleth x Raphael
-				Byleth announced his/her marriage to Raphael shortly after becoming leader of the United Kingdom of
-				Fódlan. As a knight in the new order of royal guards, Raphael helped to restore order and stability to
-				the nation during its fragile rebuilding period. It is said that the kindness and undying support of the
-				queen and her husband helped to put the minds of the people at ease. The couple was long remembered,
-				even after they stepped back from the public eye, thanks to portraits painted by the court's renowned
-				artist: Raphael's sister, Maya.
-
-				Byleth announced his/her marriage to Raphael shortly after being named archbishop of the Church of
-				Seiros. As the archbishop's spouse and a member of the reformed Knights of Seiros, Raphael helped to
-				ease the suffering and damage caused by the war. It is said that the great affection between the
-				archbishop and her husband never failed to put the minds of the people at ease. The couple was long
-				remembered, even after they stepped back from the public eye, thanks to portraits painted by a renowned
-				artist: Raphael's sister, Maya.
-
-				Byleth and Raphael celebrated their marriage with a small but lively wedding. Almost immediately
-				afterward, the battle with those who slither in the dark began in earnest, and Raphael devoted himself
-				wholly to his wife's protection until the chaos of war was finally quelled. It is said that the great
-				affection between the two was viewed by many as a symbol of the new era of peace that followed. They
-				were long remembered, even after they stepped back from the public eye, thanks to portraits painted by a
-				renowned artist: Raphael's sister, Maya.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Lysithea">
-			<p>
-				Byleth x Lysithea
-				Byleth announced his/her engagement to Lysithea shortly after becoming leader of the United Kingdom of
-				Fódlan. Before they were officially wed, she returned home, helped her father to restore Ordelia
-				territory, and offered the land up to be governed directly by the new kingdom. Once the affairs of House
-				Ordelia were in order, Lysithea finally married and became queen. Even without her Crests, she proved
-				more than capable in the role, applying her great insight and intelligence toward a better Fódlan. When
-				the rebuilding effort was complete, the couple and their children enjoyed long and peaceful lives.
-
-				Byleth announced his/her engagement to Lysithea shortly after being named archbishop of the Church of
-				Seiros. Before they were officially wed, she returned home, helped her father to restore Ordelia
-				territory, and offered the land up to be governed by neighboring lords. Once her parents had retired and
-				withdrawn, Lysithea finally became the archbishop's wife. Even without her Crests, she proved more than
-				capable of assisting him in his role, applying her great insight and intelligence toward a renewed
-				church. Once the rebuilding effort was complete, the couple and their two children enjoyed long and
-				peaceful lives in the lively household they built together.
-
-				Almost immediately after Byleth and Lysithea had celebrated their engagement, the struggle against those
-				who slither in the dark began in earnest. Together they fought tirelessly to bring the war to an end so
-				that Fódlan could have lasting peace. Afterward, they left the Imperial army for Ordelia territory,
-				where they were officially wed. After restoring their war-torn land, the couple vanished from the public
-				eye, along with Count Ordelia and his wife. No records remain of their lives after that, but it is
-				rumored that they retired to a peaceful life in Derdriu, making sweets.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Ignatz">
-			<p>
-				Byleth x Ignatz
-				Byleth announced his/her marriage to Ignatz shortly after becoming leader of the United Kingdom of
-				Fódlan. Ignatz supported the restoration of Fódlan as the queen's spouse, but became better known for
-				his skill with a paintbrush. He donated beautiful portraits and landscapes to churches all over the
-				kingdom, and it is said that his works provided great comfort to those touched by the war. His most
-				famous piece, entitled Descent of the Goddess, depicted the eponymous deity descending from the heavens
-				to lead the people. Those who knew the queen often remarked that her face must have been used as a
-				reference.
-
-				Byleth announced his/her marriage to Ignatz shortly after being named archbishop of the Church of
-				Seiros. Ignatz supported the restoration of Fódlan as the archbishop's spouse, but became better known
-				for his skill with a paintbrush. He donated beautiful portraits and landscapes to churches all over the
-				Kingdom, and it is said that his works provided great comfort to those touched by the war. His most
-				famous piece, entitled Descent of the Goddess, depicted the eponymous deity descending from the heavens
-				to lead the people. Those who knew the archbishop often remarked that her face must have been used as a
-				reference.
-
-				Byleth and Ignatz celebrated their marriage with a small but lively wedding. Almost immediately
-				afterward, the battle with those who slither in the dark began in earnest. Ignatz supported his wife not
-				only as a general, but also as an artist, wielding his brush to capture the image of her fighting
-				alongside the emperor. His most famous series of paintings, called Chronicles of a Hero, influenced
-				future artists for generations to come—but it is said that his most precious work was one from his early
-				days, entitled Descent of the Goddess. It is believed that he used his beloved wife as a reference for
-				the beautiful visage depicted in that scene.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Marianne">
-			<p>
-				Byleth x Marianne
-				Byleth announced an engagement to Marianne shortly after being named leader of the United Kingdom of
-				Fódlan. Before they were officially wed, Marianne first returned home to prepare for the ceremony and to
-				study oration and management under her adoptive father. She returned under the Great Tree Moon, and
-				became queen of a restored Fódlan in a grand wedding. The kingdom experienced remarkable growth
-				thereafter, and while Byleth became known as a leader of incredible wisdom, few people of the time
-				understood the depth of the queen's influence.
-
-				Byleth announced an engagement to Marianne shortly after being named archbishop of the Church of Seiros.
-				Before they were officially wed, Marianne first returned home to prepare for the ceremony and to study
-				oration and management under her adoptive father. She returned under the Great Tree Moon, and became the
-				archbishop's wife in a grand wedding. The Kingdom experienced remarkable growth thereafter, thanks to
-				the church, and while the archbishop became known for his incredible wisdom, few people of the time
-				understood the depth of his wife's influence.
-
-				Almost immediately after Byleth and Marianne had celebrated their engagement, the struggle against those
-				who slither in the dark began in earnest. Together they fought tirelessly to bring the war to an end so
-				that Fódlan could have lasting peace. Afterwards, they left the Imperial army and were officially wed in
-				Edmund territory. In time, the pair grew into first-rate politicians under the tutelage of Margrave
-				Edmund himself. With the emperor's blessing, they annexed part of Riegan territory, including Derdriu,
-				and used their influence to improve relations and expand trade with foreign nations. Their work greatly
-				contributed to the restoration of the Empire.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Leonie">
-			<p>
-				Byleth x Leonie
-				Byleth announced his/her marriage to Leonie shortly after becoming leader of the United Kingdom of
-				Fódlan. Though she accepted the status of queen, Leonie disliked the pageantry of the position and
-				refused to part with her weapons. She avoided court and instead founded the Jeralt Company, an elite
-				group of soldiers hand-picked from the royal guard. They mostly busied themselves by hunting down
-				bandits and monsters, but they also stopped the remnants of the Imperial army from organizing a revolt.
-				It is rumored that one knight of rare skill who fought alongside Leonie in the Jeralt Company was none
-				other than the king himself.
-
-				Byleth announced his/her marriage to Leonie shortly after being named archbishop of the Church of
-				Seiros. Though she accepted the status of the archbishop's wife, Leonie disliked the formality of the
-				position and refused to part with her weapons. Avoiding involvement with the church, she founded the
-				Jeralt Company, an elite group of soldiers hand-picked from the Knights of Seiros. They served as guards
-				to the archbishop in peacetime, and were first to respond to reports of bandits or monsters. It is
-				rumored that one knight of rare skill who fought alongside Leonie in the Jeralt Company was none other
-				than the archbishop himself.
-
-				Almost immediately after Byleth and Leonie had finished their lively wedding ceremony, the struggle
-				against those who slither in the dark began in earnest. Leaving the Black Eagle Strike Force behind, the
-				pair formed a new group called the Jeralt Company and invited all their friends and allies to join them.
-				The group fought all across Fódlan, cementing the Empire's victory by cleaning up its enemies. With
-				Fódlan secure, all but two members of the Jeralt Company returned to their homes. The couple continued
-				their careers as mercenaries, taking on all kinds of tasks, from monster hunting to tavern security.
-				Their strength and humility were well loved.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Manuela">
-			<p>
-				Byleth x Manuela
-				Byleth announced his/her marriage to Manuela shortly after becoming leader of the United Kingdom of
-				Fódlan. Manuela lent her considerable talent and experience to the rebuilding effort, using personal
-				connections she'd gained during her time as a songstress and teacher to assemble a team of talented
-				people to govern. She became essential to the king's rule, and her skills as a physician kept him in
-				good health for many years. The happiness of the couple and their children was plain to see on the faces
-				that were immortalized in family portraits.
-
-				Byleth announced his/her marriage to Manuela shortly after being named archbishop of the Church of
-				Seiros. Manuela lent her considerable experience and talent to the rebuilding effort, using personal
-				connections she'd gained during her time as a songstress and teacher to assemble a team of talented
-				people to restore the church. She became essential to the archbishop, and her skills as a physician kept
-				him in good health for many years. The happiness of the couple and their children was plain to see on
-				the faces that were immortalized in family portraits.
-
-				Very soon after Byleth and Manuela had finished their grand and elaborate wedding ceremony, the struggle
-				against those who slither in the dark began in earnest. The pair fought in many battles together, but
-				Manuela had to leave the front lines when she discovered that she was with child. Though they spent many
-				days apart, the family reunited once true peace had come to Fódlan. The happiness of their family was
-				plain to see on the faces that were immortalized in their family portraits.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Hanneman">
-			<p>
-				Byleth x Hanneman
-				Byleth announced his/her marriage to Hanneman shortly after becoming leader of the United Kingdom of
-				Fódlan. Hanneman provided counsel to the queen as she worked to restore Fódlan, but his goal remained to
-				determine the workings of the Crests and to do away with the inequality caused by them. To that end, his
-				research resulted in magical tools which could be used even without the aid of Crests. The queen made
-				good use of these tools, and they soon became a cornerstone for continued progress.
-
-				Byleth announced his/her marriage to Hanneman shortly after being named archbishop of the Church of
-				Seiros. Hanneman provided counsel to the archbishop as she worked to restore the church, but his goal
-				remained to determine the workings of the Crests, and to do away with the inequality caused by them. To
-				that end, his research resulted in magical tools which could be used even without the aid of Crests. The
-				archbishop made good use of these tools, and they soon became a cornerstone for continued progress.
-
-				Very soon after Byleth and Hanneman had finished their quiet wedding ceremony, the struggle against
-				those who slither in the dark began in earnest. The pair fought in many battles, eventually bringing
-				true peace to Fódlan. Afterwards, they worked together to pursue Hanneman's goal to determine the
-				workings of the Crests and to do away with the inequality caused by them. Their research resulted in
-				magical tools which could be used even without the aid of Crests. The Father of Crestology and his
-				spouse earned worldwide renown for devising tools that became a cornerstone of progress.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Catherine">
-			<p>
-				Byleth x Catherine
-				Byleth announced his/her marriage to Catherine shortly after becoming leader of the United Kingdom of
-				Fódlan. While the king focused on the rebuilding effort, Catherine worked as his bodyguard, and when the
-				situation called for military force, she mobilized the troops and went to battle. Under her watchful
-				eye, Fódlan entered a new era of peace. A common saying among the people was that the king of Fódlan had
-				two weapons: the Sword of the Creator, and his fearsome wife.
-
-				Byleth announced his/her marriage to Catherine shortly after being named archbishop of the Church of
-				Seiros. While the archbishop focused on the rebuilding effort, Catherine worked as his bodyguard, and
-				when the situation called for military force, she mobilized the troops and went to battle. Under her
-				watchful eye, Fódlan entered a new era of peace. A common saying among the people was that the
-				archbishop had two weapons: the Sword of the Creator, and his fearsome wife.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Shamir">
-			<p>
-				Byleth x Shamir
-				Byleth announced his/her marriage to Shamir shortly after becoming leader of the United Kingdom of
-				Fódlan. While the king focused on the rebuilding effort, Shamir became his bodyguard and confidant. She
-				even acted as captain of the royal guard, and became known as a watchful and trustworthy queen. As a
-				couple, their daily lives were busy indeed, and both were famously taciturn, but it is said that they
-				cherished their quiet time together—especially once they began to have children.
-
-				Byleth announced his/her marriage to Shamir shortly after being named archbishop of the Church of
-				Seiros. While the archbishop focused on the rebuilding effort, Shamir became his bodyguard and
-				confidant. She even acted as a deputy captain of the Knights of Seiros, and in that capacity, became
-				quite popular. As a couple, their daily lives were busy indeed, and both were famously taciturn, but it
-				is said that they cherished their quiet time together—especially once they began to have children.
-
-				Shortly after Byleth and Shamir had finished their modest and stately wedding ceremony, the struggle
-				against those who slither in the dark began in earnest. The pair fought in many battles together, and
-				Shamir lent her talent and experience as a sniper for the Knights of Seiros to the cause of lasting
-				peace for Fódlan. As a couple, their daily lives were busy indeed, and both were famously taciturn, but
-				it is said that they cherished their quiet time together—especially once they began to have children.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Alois">
-			<p>
-				Byleth x Alois
-				After the war, Byleth ascended the throne of the United Kingdom of Fódlan, and Alois retired from the
-				Knights of Seiros to serve the former professor. Alois became the new leader's right hand, and his
-				duties in that respect kept him busily engaged all over Fódlan, giving all he had to support his/her
-				reign. Alois's cheerful character was beloved by his subordinates, who rallied behind him to create the
-				most numerous order of knights in all Fódlan. It is said that Byleth relied on Alois as though he were
-				his/her own father.
-
-				When Byleth took on the role of archbishop in Rhea's place, he/she reformed the order of the church
-				little by little. Eventually this included the Knights of Seiros, and Alois was named captain and the
-				archbishop's right hand. The captain's duties kept him busily engaged all over Fódlan. His cheerful
-				character inspired those under his command, unifying the Knights of Seiros in a way they had never been
-				before. The archbishop relied on Alois as if he were his/her father, and Alois in turn treated him/her
-				like his child. It is said that Alois was so overcome with emotion on the archbishop's wedding day that
-				his weeping could be heard through the applause.
-
-				When all of the fighting was over, Byleth embarked on another wandering journey as a mercenary. He
-				traveled all over Fódlan, following his father's steps. When he at last drifted into Remire Village, he
-				was reunited with Alois, who had moved there with his family and was now living on a farm. On Alois's
-				advice, he decided to stay a while, and before he knew it, five years had passed. He fell in love with a
-				kind woman in the village, and they had a modest wedding. It is said that Alois was so overcome with
-				emotion on that day that his weeping could be heard from anywhere in the village.
-
-				When all of the fighting was over, Byleth embarked on another wandering journey as a mercenary. She
-				traveled all over Fódlan, following her father's steps. When she at last drifted into Remire Village,
-				she was reunited with Alois, who had moved there with his family and was now living on a farm. On
-				Alois's advice, she decided to stay a while, and before she knew it, five years had passed. She fell in
-				love with a kind man in the village, and they had a modest wedding. It is said that Alois was so
-				overcome with emotion on that day that his weeping could be heard from anywhere in the village.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Gilbert">
-			<p>
-				Byleth x Gilbert
-				When Byleth took on the role of archbishop in Rhea's place, he/she devoted himself/herself to official
-				business as the new leader of the Church of Seiros. Reaching an agreement with the Kingdom, he/she
-				worked tirelessly on the restoration and development of all of Fódlan. Behind his/her achievements was
-				the knight Gustave, formerly known as Gilbert of the Knights of Seiros, who remained always by the
-				archbishop's side. Byleth came to rely on Gustave for nearly everything. It is said that he/she
-				continued to call upon Gustave for instruction and advice well into his retirement.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Cyril">
-			<p>
-				Byleth x Cyril
-				Byleth declared the founding of the United Kingdom of Fódlan at Garreg Mach and ascended the throne as
-				its first leader. Cyril served as a chamberlain, supervising all general affairs. With the expansion of
-				the kingdom, it was eventually decided that the queen would move to a new royal capital. Cyril wished to
-				accompany her, but was ordered to enroll in the newly reopened Officers Academy. Though reluctant, he
-				complied. A year later, after consistently demonstrating great wisdom and maturity, he won the queen's
-				heart, and they announced their abrupt marriage. The move surprised many, but no one was as shocked as
-				Cyril himself was pleased.
-
-				Byleth took on the role of archbishop of the Church of Seiros, and Cyril served her in all things, just
-				as he had served Rhea. As Fódlan stabilized, and the rebuilding effort came to an end, the Officers
-				Academy finally reopened, and the archbishop directed Cyril to enroll there as a student. A year later,
-				after consistently demonstrating great wisdom and maturity, he won the archbishop's heart, and they
-				announced their abrupt marriage. The move surprised many, but no one was as shocked as Cyril himself was
-				pleased.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Flayn">
-			<p>
-				Byleth x Flayn
-				Byleth announced his/her marriage to Flayn shortly after becoming leader of the United Kingdom of
-				Fódlan. Flayn did not get involved in government affairs, but instead focused on making frequent public
-				appearancwhere her calm and pleasant demeanor helped endear the new leaders to the people. When Fódlan
-				was finally restored, the couple left the throne to their children and retired to a royal villa on the
-				Rhodos Coast of western Fódlan. They spent their remaining years there in peace, fishing a great deal.
-				It is said that no matter their age, they always retained a youthful appearance.
-
-				Byleth announced his/her marriage to Flayn shortly after being named archbishop of the Church of Seiros.
-				Flayn chose not to get involved in management of the church, instead focusing on healing those who had
-				been hurt by the war. Her compassionate demeanor led many to speculate that she was "the second coming
-				of Saint Cethleann." When Fódlan was finally restored, the archbishop named a successor, and the couple
-				retired to a royal villa on the Rhodos Coast of western Fódlan. They spent their remaining years there
-				in peace, fishing a great deal. It is said that no matter their age, they always retained a youthful
-				appearance.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Seteth">
-			<p>
-				Byleth x Seteth
-				After ascending the throne as the first queen of the United Kingdom of Fódlan, Byleth appointed Seteth
-				as her prime minister. As they set about the grand task of restoring Fódlan, the prime minister's
-				strictness combined with the queen's magnanimity won the people over easily. Their personalities
-				complemented one another perfectly in dealings with obstinate lords. When their long work was done, they
-				finally announced their marriage, to the shock and delight of their subjects. The people considered
-				themselves truly blessed to be governed by such a union.
-
-				Byleth took on the role of archbishop of the Church of Seiros, and Seteth continued in his position of
-				adviser. As they set about the grand task of restoring Fódlan and the church, Seteth's strictness
-				combined with the archbishop's magnanimity won the faithful over easily. Their personalities
-				complemented one another perfectly in keeping church operations smooth. When Fódlan returned to
-				stability, they finally announced their marriage, to the shock and delight of the people. The faithful
-				considered themselves truly blessed to be guided by such a pair.
-			</p>
-		</div>
-		<div class="filterDiv Byleth Sothis">
-			<p>
-				Byleth x Sothis
-				N/A
-			</p>
-		</div>
-		<div class="filterDiv Edelgard Hubert">
-			<p>
-				Edelgard x Hubert
-				As the new Adrestian emperor, Edelgard gave all she had to breathe new life into the government of
-				Fódlan. With tireless work, great sacrifice, and her devoted servant Hubert by her side, she instituted
-				new class reforms and helped to ensure the people's independence. Hubert was always close at hand, ready
-				to dispose of unsavory burdens by any means necessary. In their later years, they passed the fruits of
-				her labor on to Edelgard's successor and vanished from the public eye. Though it is said they spent the
-				rest of their lives together, it is unlikely they ever gave voice to the true depth of their affections.
-			</p>
-		</div>
-		<div class="filterDiv Edelgard Ferdinand">
-			<p>
-				Edelgard x Ferdinand
-				As the Adrestian emperor, Edelgard appointed Ferdinand as her prime minister, and the two devoted
-				themselves to ruling Fódlan. Their sharply contrasting views made for frequent and lively debate, but
-				with each enhancing the perspective of the other, Fódlan was better for it. As they worked tirelessly to
-				create a better future, they were soon bound together by marriage as well. Their children, born to those
-				who had torn down the old social hierarchy, were encouraged to choose their own paths.
-			</p>
-		</div>
-		<div class="filterDiv Edelgard Linhardt">
-			<p>
-				Edelgard x Linhardt
-				As the new Adrestian emperor, Edelgard gave all she had to breathe new life into the government of
-				Fódlan. With tireless work and great sacrifice, she instituted new class reforms to ensure that people
-				could rise on their own merits. During those years, however, there was a period of time in which she
-				simply disappeared. It is said that she went to the research facility of the foremost authority in
-				Crests, Linhardt, who had relinquished his rank and title to live a life of study. There, after
-				confirming the results of Linhardt's experiments, Edelgard was able to enjoy a rare break from her busy
-				life. The respite was brief, but they cherished that time for the rest of their lives.
-			</p>
-		</div>
-		<div class="filterDiv Edelgard Caspar">
-			<p>
-				Edelgard x Caspar
-				Edelgard, the new Adrestian emperor, appointed Caspar as her Minister of Military Affairs, and the two
-				devoted themselves to ruling Fódlan. Caspar quickly developed a reputation for recklessness in his duty,
-				but he compensated for it with successes in the field and was given leeway by the emperor as a result.
-				Privately, the couple's relationship as husband and wife was more tempestuous. Their spats were
-				frequent, but it is said that Edelgard took pleasure in her ability to influence Caspar, and Caspar
-				enjoyed reining the emperor in from time to time. It was a strange but happy union.
-			</p>
-		</div>
-		<div class="filterDiv Edelgard Bernadetta">
-			<p>
-				Edelgard x Bernadetta
-				When Bernadetta inherited House Varley from her father, she tried to withdraw from politics and remain
-				within the bounds of her territory, but Edelgard, the new Adrestian emperor, would not allow it.
-				Instead, she demanded that Bernadetta counsel her in governing Fódlan. It is said that the emperor made
-				this choice to keep herself from being too detached, and that Bernadetta was all too happy to provide a
-				more emotional perspective now and again. The people of Enbarr could always tell when the two were
-				meeting by the sound of Bernadetta's panicked voice ringing out from the palace.
-			</p>
-		</div>
-		<div class="filterDiv Edelgard Dorothea">
-			<p>
-				Edelgard x Dorothea
-				As Edelgard's reign as the Adrestian emperor began, Enbarr was restored, and with it, a certain opera
-				house. Soon the Mittelfrank Opera Company put together a war drama depicting the journey and sacrifice
-				of the emperor and her companions, and the starring role went to none other than Dorothea. Edelgard
-				initially forbade the company from staging it, but was eventually persuaded by Dorothea's passionate
-				performance to rescind that decree. It is said that the emperor always set aside time to enjoy the opera
-				thereafter.
-			</p>
-		</div>
-		<div class="filterDiv Edelgard Hanneman">
-			<p>
-				Edelgard x Hanneman
-				As the new Adrestian emperor, Edelgard gave all she had to breathe new life into the government of
-				Fódlan. To that end, Hanneman's research proved invaluable. Seeking to determine the nature of Crests,
-				and to do away with the inequality caused by them, the Father of Crestology produced magical tools that
-				could be used even without the aid of Crests. These were put to eager use by Edelgard, who saw both of
-				their dreams realized. It is not hard to imagine that a pair with such similar ideologies and plans for
-				the future would eventually settle into an affectionate and fulfilling relationship.
-			</p>
-		</div>
-		<div class="filterDiv Edelgard Manuela">
-			<p>
-				Edelgard x Manuela
-				As the new Adrestian emperor, Edelgard gave all she had to breathe new life into the government of
-				Fódlan. Her first objective was to institute new class reforms and ensure the people's independence. For
-				that reason, she sought the counsel of Manuela, whose vast array of contacts, talents, and experience
-				proved invaluable. She became essential to Edelgard, and her skill as a physician kept the emperor in
-				good health for many years. Both remained unmarried, and it is said that the two became extremely close
-				over the years.
-			</p>
-		</div>
-		<div class="filterDiv Edelgard Lysithea">
-			<p>
-				Edelgard x Lysithea
-				After the war, Edelgard and Lysithea threw themselves into the fight against those who slither in the
-				dark. The struggle was long and arduous, but not without its benefits. With careful analysis of ancient
-				techniques, they discovered ways to recover the years of life that had been stolen from them.
-				Afterwards, the new Adrestian emperor and Lysithea, her trusted officer, devoted the rest of their lives
-				to Fódlan's rule. For her counsel in instituting class reforms and ensuring the independence of the
-				people, Lysithea came to be known as the Wisdom of the Empire. The pair of talented women ushered Fódlan
-				into a new age of innovation and prosperity.
-			</p>
-		</div>
-		<div class="filterDiv Dimitri Dedue">
-			<p>
-				Dimitri x Dedue
-				After his coronation, Dimitri assumed the throne of the Holy Kingdom of Faerghus, and his loyal vassal,
-				Dedue, remained ever at his side. Among Dimitri's achievements was the reconciliation with Duscur: an
-				extraordinary effort that required extensive negotiations to get past a history of betrayal and
-				oppression. It was a trying task, but Dimitri never once considered giving up. While they behaved as
-				lord and vassal in public, it is said that Dimitri and Dedue were more like family in private. When
-				Dimitri finally fell to illness, Dedue tended to his liege's deathbed, and then took up a post at his
-				grave for the rest of his days. When the time came, they were buried beside each other.
-			</p>
-		</div>
-	</div>
-	<script src="filter.js"></script>
-	</p>
+            </p>
+        </div>
+        <div class="filterDiv Byleth Ingrid">
+            <p>
+                Byleth x Ingrid<br>
+                Byleth announced his/her marriage to Ingrid shortly after becoming leader of the United Kingdom of
+                Fódlan. Together they made great strides toward restoring Fódlan to its former glory and beyond. Though
+                Ingrid contributed to the court in her position as queen, she also famously guarded her king in a
+                physical capacity. Most well-known is how the "Warrior Queen" drew her own weapon to repel an assassin's
+                blade meant for her husband, a tale which lived on in chivalric storybooks for generations.
+                <br>
+                Byleth announced his/her marriage to Ingrid shortly after succeeding Rhea as the new archbishop.
+                Together they made great strides in helping to restore the Kingdom of Fódlan to its former glory and
+                beyond. Though Ingrid provided counsel to the archbishop as his wife, she also earned renown as a Holy
+                Knight of Seiros. Most famously, she parried an insurgent's blade with her own weapon just before it
+                struck the archbishop's neck. Tales of the archbishop who ended the long war, and his valiant wife
+                Ingrid, lived on in storybooks for generations.
+                <br>
+                When the war at last came to an end, Byleth and his wife, Ingrid, relocated to her hometown. Galatea
+                territory had been seized by the Empire, but the emperor granted Ingrid's request to retain governance
+                of it. She and her husband were initially received with skepticism, but together they worked hard to
+                reform the territory and address its food shortages. Through hard work, pure grit, and a truly knightly
+                dedication to the people, they were able to transform the barren landscape into what would, decades
+                later, become known as the most fertile grounds in all of Fódlan.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Hilda">
+            <p>
+                Byleth x Hilda<br>
+                Byleth announced his/her marriage to Hilda shortly after becoming leader of the United Kingdom of
+                Fódlan. As queen, Hilda rarely took part in politics herself, but she nevertheless contributed greatly
+                to the restoration of Fódlan by recommending exceptional people to influential positions. Her hobby of
+                creating fashionable accessories also bore fruit, as her designs achieved widespread popularity, and she
+                created the first artisan academy in Fódlan. The school produced many talented craftsmen, one of whom
+                created a statue that expertly captured the king's delight at receiving the gift of a bracelet from the
+                queen.
+                <br>
+                Byleth announced his/her marriage to Hilda shortly after being named archbishop of the Church of Seiros.
+                Hilda rarely involved herself with the church, but nevertheless contributed greatly to its restoration
+                by recommending exceptional people to influential positions. Her hobby of creating fashionable
+                accessories also bore fruit, as her designs achieved widespread popularity, and she started an artisan
+                academy at Garreg Mach. The school produced many talented craftsmen, one of whom created a statue that
+                expertly captured the archbishop's delight at receiving the gift of a bracelet from his wife.
+                <br>
+                Almost immediately after Byleth and Hilda finished their gorgeous wedding ceremony, the struggle against
+                those who slither in the dark began in earnest. They fought tirelessly to bring lasting peace to Fódlan,
+                and afterward retired from the Imperial army to Goneril territory. Hilda's hobby of creating fashionable
+                accessories bore fruit, and she leveraged her husband's reputation as a hero to create the first artisan
+                academy in Fódlan. The school produced many talented craftsmen, one of whom created a statue that
+                expertly captured the hero's delight at receiving the gift of a bracelet from his wife.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Lorenz">
+            <p>
+                Byleth x Lorenz<br>
+                Byleth announced his/her marriage to Lorenz shortly after becoming leader of the United Kingdom of
+                Fódlan. Lorenz took equally well to his dual roles as the queen's husband and the leader of House
+                Gloucester, working simultaneously to restore his own territory and to advance the development of Fódlan
+                at large. Because his policies were of particular benefit to the commonfolk, he was well loved, and came
+                to be called the Lord of Roses. After many years of peace, Lorenz grew ill and withdrew from the public
+                eye. The queen followed, entrusting the throne to the prince. It is said that he was the spitting image
+                of his father.
+                <br>
+                Byleth announced his/her marriage to Lorenz shortly after being named archbishop of the Church of
+                Seiros. Lorenz took equally well to his dual roles as the archbishop's husband and the leader of House
+                Gloucester, working simultaneously to restore his own territory and to support the church's efforts to
+                restore Fódlan at large. Because his policies were of particular benefit to the commonfolk, he was well
+                loved, and the church's authority was restored as a result. After many years of peace, Lorenz and the
+                archbishop resigned their positions, entrusting rule of House Gloucester to their son. It is said that
+                he was the spitting image of his father.
+                <br>
+                Soon after Byleth and Lorenz had celebrated their marriage in style, the battle against those who
+                slither in the dark began in earnest. After fighting hard to bring true peace to Fódlan, Lorenz took
+                over as head of House Gloucester, and he and his wife focused their efforts on restoring the territory.
+                They had an active political and military life over the years, working together to overcome many
+                hardships. After decades of dedicated service to the people, Lorenz grew weak and retired. Byleth
+                followed suit, and they entrusted House Gloucester to their son. It is said that he was the spitting
+                image of his father, right down to his signature red rose.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Raphael">
+            <p>
+                Byleth x Raphael<br>
+                Byleth announced his/her marriage to Raphael shortly after becoming leader of the United Kingdom of
+                Fódlan. As a knight in the new order of royal guards, Raphael helped to restore order and stability to
+                the nation during its fragile rebuilding period. It is said that the kindness and undying support of the
+                queen and her husband helped to put the minds of the people at ease. The couple was long remembered,
+                even after they stepped back from the public eye, thanks to portraits painted by the court's renowned
+                artist: Raphael's sister, Maya.
+                <br>
+                Byleth announced his/her marriage to Raphael shortly after being named archbishop of the Church of
+                Seiros. As the archbishop's spouse and a member of the reformed Knights of Seiros, Raphael helped to
+                ease the suffering and damage caused by the war. It is said that the great affection between the
+                archbishop and her husband never failed to put the minds of the people at ease. The couple was long
+                remembered, even after they stepped back from the public eye, thanks to portraits painted by a renowned
+                artist: Raphael's sister, Maya.
+                <br>
+                Byleth and Raphael celebrated their marriage with a small but lively wedding. Almost immediately
+                afterward, the battle with those who slither in the dark began in earnest, and Raphael devoted himself
+                wholly to his wife's protection until the chaos of war was finally quelled. It is said that the great
+                affection between the two was viewed by many as a symbol of the new era of peace that followed. They
+                were long remembered, even after they stepped back from the public eye, thanks to portraits painted by a
+                renowned artist: Raphael's sister, Maya.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Lysithea">
+            <p>
+                Byleth x Lysithea<br>
+                Byleth announced his/her engagement to Lysithea shortly after becoming leader of the United Kingdom of
+                Fódlan. Before they were officially wed, she returned home, helped her father to restore Ordelia
+                territory, and offered the land up to be governed directly by the new kingdom. Once the affairs of House
+                Ordelia were in order, Lysithea finally married and became queen. Even without her Crests, she proved
+                more than capable in the role, applying her great insight and intelligence toward a better Fódlan. When
+                the rebuilding effort was complete, the couple and their children enjoyed long and peaceful lives.
+                <br>
+                Byleth announced his/her engagement to Lysithea shortly after being named archbishop of the Church of
+                Seiros. Before they were officially wed, she returned home, helped her father to restore Ordelia
+                territory, and offered the land up to be governed by neighboring lords. Once her parents had retired and
+                withdrawn, Lysithea finally became the archbishop's wife. Even without her Crests, she proved more than
+                capable of assisting him in his role, applying her great insight and intelligence toward a renewed
+                church. Once the rebuilding effort was complete, the couple and their two children enjoyed long and
+                peaceful lives in the lively household they built together.
+                <br>
+                Almost immediately after Byleth and Lysithea had celebrated their engagement, the struggle against those
+                who slither in the dark began in earnest. Together they fought tirelessly to bring the war to an end so
+                that Fódlan could have lasting peace. Afterward, they left the Imperial army for Ordelia territory,
+                where they were officially wed. After restoring their war-torn land, the couple vanished from the public
+                eye, along with Count Ordelia and his wife. No records remain of their lives after that, but it is
+                rumored that they retired to a peaceful life in Derdriu, making sweets.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Ignatz">
+            <p>
+                Byleth x Ignatz<br>
+                Byleth announced his/her marriage to Ignatz shortly after becoming leader of the United Kingdom of
+                Fódlan. Ignatz supported the restoration of Fódlan as the queen's spouse, but became better known for
+                his skill with a paintbrush. He donated beautiful portraits and landscapes to churches all over the
+                kingdom, and it is said that his works provided great comfort to those touched by the war. His most
+                famous piece, entitled Descent of the Goddess, depicted the eponymous deity descending from the heavens
+                to lead the people. Those who knew the queen often remarked that her face must have been used as a
+                reference.
+                <br>
+                Byleth announced his/her marriage to Ignatz shortly after being named archbishop of the Church of
+                Seiros. Ignatz supported the restoration of Fódlan as the archbishop's spouse, but became better known
+                for his skill with a paintbrush. He donated beautiful portraits and landscapes to churches all over the
+                Kingdom, and it is said that his works provided great comfort to those touched by the war. His most
+                famous piece, entitled Descent of the Goddess, depicted the eponymous deity descending from the heavens
+                to lead the people. Those who knew the archbishop often remarked that her face must have been used as a
+                reference.
+                <br>
+                Byleth and Ignatz celebrated their marriage with a small but lively wedding. Almost immediately
+                afterward, the battle with those who slither in the dark began in earnest. Ignatz supported his wife not
+                only as a general, but also as an artist, wielding his brush to capture the image of her fighting
+                alongside the emperor. His most famous series of paintings, called Chronicles of a Hero, influenced
+                future artists for generations to come—but it is said that his most precious work was one from his early
+                days, entitled Descent of the Goddess. It is believed that he used his beloved wife as a reference for
+                the beautiful visage depicted in that scene.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Marianne">
+            <p>
+                Byleth x Marianne<br>
+                Byleth announced an engagement to Marianne shortly after being named leader of the United Kingdom of
+                Fódlan. Before they were officially wed, Marianne first returned home to prepare for the ceremony and to
+                study oration and management under her adoptive father. She returned under the Great Tree Moon, and
+                became queen of a restored Fódlan in a grand wedding. The kingdom experienced remarkable growth
+                thereafter, and while Byleth became known as a leader of incredible wisdom, few people of the time
+                understood the depth of the queen's influence.
+                <br>
+                Byleth announced an engagement to Marianne shortly after being named archbishop of the Church of Seiros.
+                Before they were officially wed, Marianne first returned home to prepare for the ceremony and to study
+                oration and management under her adoptive father. She returned under the Great Tree Moon, and became the
+                archbishop's wife in a grand wedding. The Kingdom experienced remarkable growth thereafter, thanks to
+                the church, and while the archbishop became known for his incredible wisdom, few people of the time
+                understood the depth of his wife's influence.
+                <br>
+                Almost immediately after Byleth and Marianne had celebrated their engagement, the struggle against those
+                who slither in the dark began in earnest. Together they fought tirelessly to bring the war to an end so
+                that Fódlan could have lasting peace. Afterwards, they left the Imperial army and were officially wed in
+                Edmund territory. In time, the pair grew into first-rate politicians under the tutelage of Margrave
+                Edmund himself. With the emperor's blessing, they annexed part of Riegan territory, including Derdriu,
+                and used their influence to improve relations and expand trade with foreign nations. Their work greatly
+                contributed to the restoration of the Empire.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Leonie">
+            <p>
+                Byleth x Leonie<br>
+                Byleth announced his/her marriage to Leonie shortly after becoming leader of the United Kingdom of
+                Fódlan. Though she accepted the status of queen, Leonie disliked the pageantry of the position and
+                refused to part with her weapons. She avoided court and instead founded the Jeralt Company, an elite
+                group of soldiers hand-picked from the royal guard. They mostly busied themselves by hunting down
+                bandits and monsters, but they also stopped the remnants of the Imperial army from organizing a revolt.
+                It is rumored that one knight of rare skill who fought alongside Leonie in the Jeralt Company was none
+                other than the king himself.
+                <br>
+                Byleth announced his/her marriage to Leonie shortly after being named archbishop of the Church of
+                Seiros. Though she accepted the status of the archbishop's wife, Leonie disliked the formality of the
+                position and refused to part with her weapons. Avoiding involvement with the church, she founded the
+                Jeralt Company, an elite group of soldiers hand-picked from the Knights of Seiros. They served as guards
+                to the archbishop in peacetime, and were first to respond to reports of bandits or monsters. It is
+                rumored that one knight of rare skill who fought alongside Leonie in the Jeralt Company was none other
+                than the archbishop himself.
+                <br>
+                Almost immediately after Byleth and Leonie had finished their lively wedding ceremony, the struggle
+                against those who slither in the dark began in earnest. Leaving the Black Eagle Strike Force behind, the
+                pair formed a new group called the Jeralt Company and invited all their friends and allies to join them.
+                The group fought all across Fódlan, cementing the Empire's victory by cleaning up its enemies. With
+                Fódlan secure, all but two members of the Jeralt Company returned to their homes. The couple continued
+                their careers as mercenaries, taking on all kinds of tasks, from monster hunting to tavern security.
+                Their strength and humility were well loved.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Manuela">
+            <p>
+                Byleth x Manuela<br>
+                Byleth announced his/her marriage to Manuela shortly after becoming leader of the United Kingdom of
+                Fódlan. Manuela lent her considerable talent and experience to the rebuilding effort, using personal
+                connections she'd gained during her time as a songstress and teacher to assemble a team of talented
+                people to govern. She became essential to the king's rule, and her skills as a physician kept him in
+                good health for many years. The happiness of the couple and their children was plain to see on the faces
+                that were immortalized in family portraits.
+                <br>
+                Byleth announced his/her marriage to Manuela shortly after being named archbishop of the Church of
+                Seiros. Manuela lent her considerable experience and talent to the rebuilding effort, using personal
+                connections she'd gained during her time as a songstress and teacher to assemble a team of talented
+                people to restore the church. She became essential to the archbishop, and her skills as a physician kept
+                him in good health for many years. The happiness of the couple and their children was plain to see on
+                the faces that were immortalized in family portraits.
+                <br>
+                Very soon after Byleth and Manuela had finished their grand and elaborate wedding ceremony, the struggle
+                against those who slither in the dark began in earnest. The pair fought in many battles together, but
+                Manuela had to leave the front lines when she discovered that she was with child. Though they spent many
+                days apart, the family reunited once true peace had come to Fódlan. The happiness of their family was
+                plain to see on the faces that were immortalized in their family portraits.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Hanneman">
+            <p>
+                Byleth x Hanneman<br>
+                Byleth announced his/her marriage to Hanneman shortly after becoming leader of the United Kingdom of
+                Fódlan. Hanneman provided counsel to the queen as she worked to restore Fódlan, but his goal remained to
+                determine the workings of the Crests and to do away with the inequality caused by them. To that end, his
+                research resulted in magical tools which could be used even without the aid of Crests. The queen made
+                good use of these tools, and they soon became a cornerstone for continued progress.
+                <br>
+                Byleth announced his/her marriage to Hanneman shortly after being named archbishop of the Church of
+                Seiros. Hanneman provided counsel to the archbishop as she worked to restore the church, but his goal
+                remained to determine the workings of the Crests, and to do away with the inequality caused by them. To
+                that end, his research resulted in magical tools which could be used even without the aid of Crests. The
+                archbishop made good use of these tools, and they soon became a cornerstone for continued progress.
+                <br>
+                Very soon after Byleth and Hanneman had finished their quiet wedding ceremony, the struggle against
+                those who slither in the dark began in earnest. The pair fought in many battles, eventually bringing
+                true peace to Fódlan. Afterwards, they worked together to pursue Hanneman's goal to determine the
+                workings of the Crests and to do away with the inequality caused by them. Their research resulted in
+                magical tools which could be used even without the aid of Crests. The Father of Crestology and his
+                spouse earned worldwide renown for devising tools that became a cornerstone of progress.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Catherine">
+            <p>
+                Byleth x Catherine<br>
+                Byleth announced his/her marriage to Catherine shortly after becoming leader of the United Kingdom of
+                Fódlan. While the king focused on the rebuilding effort, Catherine worked as his bodyguard, and when the
+                situation called for military force, she mobilized the troops and went to battle. Under her watchful
+                eye, Fódlan entered a new era of peace. A common saying among the people was that the king of Fódlan had
+                two weapons: the Sword of the Creator, and his fearsome wife.
+                <br>
+                Byleth announced his/her marriage to Catherine shortly after being named archbishop of the Church of
+                Seiros. While the archbishop focused on the rebuilding effort, Catherine worked as his bodyguard, and
+                when the situation called for military force, she mobilized the troops and went to battle. Under her
+                watchful eye, Fódlan entered a new era of peace. A common saying among the people was that the
+                archbishop had two weapons: the Sword of the Creator, and his fearsome wife.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Shamir">
+            <p>
+                Byleth x Shamir<br>
+                Byleth announced his/her marriage to Shamir shortly after becoming leader of the United Kingdom of
+                Fódlan. While the king focused on the rebuilding effort, Shamir became his bodyguard and confidant. She
+                even acted as captain of the royal guard, and became known as a watchful and trustworthy queen. As a
+                couple, their daily lives were busy indeed, and both were famously taciturn, but it is said that they
+                cherished their quiet time together—especially once they began to have children.
+                <br>
+                Byleth announced his/her marriage to Shamir shortly after being named archbishop of the Church of
+                Seiros. While the archbishop focused on the rebuilding effort, Shamir became his bodyguard and
+                confidant. She even acted as a deputy captain of the Knights of Seiros, and in that capacity, became
+                quite popular. As a couple, their daily lives were busy indeed, and both were famously taciturn, but it
+                is said that they cherished their quiet time together—especially once they began to have children.
+                <br>
+                Shortly after Byleth and Shamir had finished their modest and stately wedding ceremony, the struggle
+                against those who slither in the dark began in earnest. The pair fought in many battles together, and
+                Shamir lent her talent and experience as a sniper for the Knights of Seiros to the cause of lasting
+                peace for Fódlan. As a couple, their daily lives were busy indeed, and both were famously taciturn, but
+                it is said that they cherished their quiet time together—especially once they began to have children.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Alois">
+            <p>
+                Byleth x Alois<br>
+                After the war, Byleth ascended the throne of the United Kingdom of Fódlan, and Alois retired from the
+                Knights of Seiros to serve the former professor. Alois became the new leader's right hand, and his
+                duties in that respect kept him busily engaged all over Fódlan, giving all he had to support his/her
+                reign. Alois's cheerful character was beloved by his subordinates, who rallied behind him to create the
+                most numerous order of knights in all Fódlan. It is said that Byleth relied on Alois as though he were
+                his/her own father.
+                <br>
+                When Byleth took on the role of archbishop in Rhea's place, he/she reformed the order of the church
+                little by little. Eventually this included the Knights of Seiros, and Alois was named captain and the
+                archbishop's right hand. The captain's duties kept him busily engaged all over Fódlan. His cheerful
+                character inspired those under his command, unifying the Knights of Seiros in a way they had never been
+                before. The archbishop relied on Alois as if he were his/her father, and Alois in turn treated him/her
+                like his child. It is said that Alois was so overcome with emotion on the archbishop's wedding day that
+                his weeping could be heard through the applause.
+                <br>
+                When all of the fighting was over, Byleth embarked on another wandering journey as a mercenary. He
+                traveled all over Fódlan, following his father's steps. When he at last drifted into Remire Village, he
+                was reunited with Alois, who had moved there with his family and was now living on a farm. On Alois's
+                advice, he decided to stay a while, and before he knew it, five years had passed. He fell in love with a
+                kind woman in the village, and they had a modest wedding. It is said that Alois was so overcome with
+                emotion on that day that his weeping could be heard from anywhere in the village.
+                <br>
+                When all of the fighting was over, Byleth embarked on another wandering journey as a mercenary. She
+                traveled all over Fódlan, following her father's steps. When she at last drifted into Remire Village,
+                she was reunited with Alois, who had moved there with his family and was now living on a farm. On
+                Alois's advice, she decided to stay a while, and before she knew it, five years had passed. She fell in
+                love with a kind man in the village, and they had a modest wedding. It is said that Alois was so
+                overcome with emotion on that day that his weeping could be heard from anywhere in the village.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Gilbert">
+            <p>
+                Byleth x Gilbert<br>
+                When Byleth took on the role of archbishop in Rhea's place, he/she devoted himself/herself to official
+                business as the new leader of the Church of Seiros. Reaching an agreement with the Kingdom, he/she
+                worked tirelessly on the restoration and development of all of Fódlan. Behind his/her achievements was
+                the knight Gustave, formerly known as Gilbert of the Knights of Seiros, who remained always by the
+                archbishop's side. Byleth came to rely on Gustave for nearly everything. It is said that he/she
+                continued to call upon Gustave for instruction and advice well into his retirement.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Cyril">
+            <p>
+                Byleth x Cyril<br>
+                Byleth declared the founding of the United Kingdom of Fódlan at Garreg Mach and ascended the throne as
+                its first leader. Cyril served as a chamberlain, supervising all general affairs. With the expansion of
+                the kingdom, it was eventually decided that the queen would move to a new royal capital. Cyril wished to
+                accompany her, but was ordered to enroll in the newly reopened Officers Academy. Though reluctant, he
+                complied. A year later, after consistently demonstrating great wisdom and maturity, he won the queen's
+                heart, and they announced their abrupt marriage. The move surprised many, but no one was as shocked as
+                Cyril himself was pleased.
+                <br>
+                Byleth took on the role of archbishop of the Church of Seiros, and Cyril served her in all things, just
+                as he had served Rhea. As Fódlan stabilized, and the rebuilding effort came to an end, the Officers
+                Academy finally reopened, and the archbishop directed Cyril to enroll there as a student. A year later,
+                after consistently demonstrating great wisdom and maturity, he won the archbishop's heart, and they
+                announced their abrupt marriage. The move surprised many, but no one was as shocked as Cyril himself was
+                pleased.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Flayn">
+            <p>
+                Byleth x Flayn<br>
+                Byleth announced his/her marriage to Flayn shortly after becoming leader of the United Kingdom of
+                Fódlan. Flayn did not get involved in government affairs, but instead focused on making frequent public
+                appearancwhere her calm and pleasant demeanor helped endear the new leaders to the people. When Fódlan
+                was finally restored, the couple left the throne to their children and retired to a royal villa on the
+                Rhodos Coast of western Fódlan. They spent their remaining years there in peace, fishing a great deal.
+                It is said that no matter their age, they always retained a youthful appearance.
+                <br>
+                Byleth announced his/her marriage to Flayn shortly after being named archbishop of the Church of Seiros.
+                Flayn chose not to get involved in management of the church, instead focusing on healing those who had
+                been hurt by the war. Her compassionate demeanor led many to speculate that she was "the second coming
+                of Saint Cethleann." When Fódlan was finally restored, the archbishop named a successor, and the couple
+                retired to a royal villa on the Rhodos Coast of western Fódlan. They spent their remaining years there
+                in peace, fishing a great deal. It is said that no matter their age, they always retained a youthful
+                appearance.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Seteth">
+            <p>
+                Byleth x Seteth<br>
+                After ascending the throne as the first queen of the United Kingdom of Fódlan, Byleth appointed Seteth
+                as her prime minister. As they set about the grand task of restoring Fódlan, the prime minister's
+                strictness combined with the queen's magnanimity won the people over easily. Their personalities
+                complemented one another perfectly in dealings with obstinate lords. When their long work was done, they
+                finally announced their marriage, to the shock and delight of their subjects. The people considered
+                themselves truly blessed to be governed by such a union.
+                <br>
+                Byleth took on the role of archbishop of the Church of Seiros, and Seteth continued in his position of
+                adviser. As they set about the grand task of restoring Fódlan and the church, Seteth's strictness
+                combined with the archbishop's magnanimity won the faithful over easily. Their personalities
+                complemented one another perfectly in keeping church operations smooth. When Fódlan returned to
+                stability, they finally announced their marriage, to the shock and delight of the people. The faithful
+                considered themselves truly blessed to be guided by such a pair.
+            </p>
+        </div>
+        <div class="filterDiv Byleth Sothis">
+            <p>
+                Byleth x Sothis<br>
+                N/A
+            </p>
+        </div>
+        <div class="filterDiv Edelgard Hubert">
+            <p>
+                Edelgard x Hubert<br>
+                As the new Adrestian emperor, Edelgard gave all she had to breathe new life into the government of
+                Fódlan. With tireless work, great sacrifice, and her devoted servant Hubert by her side, she instituted
+                new class reforms and helped to ensure the people's independence. Hubert was always close at hand, ready
+                to dispose of unsavory burdens by any means necessary. In their later years, they passed the fruits of
+                her labor on to Edelgard's successor and vanished from the public eye. Though it is said they spent the
+                rest of their lives together, it is unlikely they ever gave voice to the true depth of their affections.
+            </p>
+        </div>
+        <div class="filterDiv Edelgard Ferdinand">
+            <p>
+                Edelgard x Ferdinand<br>
+                As the Adrestian emperor, Edelgard appointed Ferdinand as her prime minister, and the two devoted
+                themselves to ruling Fódlan. Their sharply contrasting views made for frequent and lively debate, but
+                with each enhancing the perspective of the other, Fódlan was better for it. As they worked tirelessly to
+                create a better future, they were soon bound together by marriage as well. Their children, born to those
+                who had torn down the old social hierarchy, were encouraged to choose their own paths.
+            </p>
+        </div>
+        <div class="filterDiv Edelgard Linhardt">
+            <p>
+                Edelgard x Linhardt<br>
+                As the new Adrestian emperor, Edelgard gave all she had to breathe new life into the government of
+                Fódlan. With tireless work and great sacrifice, she instituted new class reforms to ensure that people
+                could rise on their own merits. During those years, however, there was a period of time in which she
+                simply disappeared. It is said that she went to the research facility of the foremost authority in
+                Crests, Linhardt, who had relinquished his rank and title to live a life of study. There, after
+                confirming the results of Linhardt's experiments, Edelgard was able to enjoy a rare break from her busy
+                life. The respite was brief, but they cherished that time for the rest of their lives.
+            </p>
+        </div>
+        <div class="filterDiv Edelgard Caspar">
+            <p>
+                Edelgard x Caspar<br>
+                Edelgard, the new Adrestian emperor, appointed Caspar as her Minister of Military Affairs, and the two
+                devoted themselves to ruling Fódlan. Caspar quickly developed a reputation for recklessness in his duty,
+                but he compensated for it with successes in the field and was given leeway by the emperor as a result.
+                Privately, the couple's relationship as husband and wife was more tempestuous. Their spats were
+                frequent, but it is said that Edelgard took pleasure in her ability to influence Caspar, and Caspar
+                enjoyed reining the emperor in from time to time. It was a strange but happy union.
+            </p>
+        </div>
+        <div class="filterDiv Edelgard Bernadetta">
+            <p>
+                Edelgard x Bernadetta<br>
+                When Bernadetta inherited House Varley from her father, she tried to withdraw from politics and remain
+                within the bounds of her territory, but Edelgard, the new Adrestian emperor, would not allow it.
+                Instead, she demanded that Bernadetta counsel her in governing Fódlan. It is said that the emperor made
+                this choice to keep herself from being too detached, and that Bernadetta was all too happy to provide a
+                more emotional perspective now and again. The people of Enbarr could always tell when the two were
+                meeting by the sound of Bernadetta's panicked voice ringing out from the palace.
+            </p>
+        </div>
+        <div class="filterDiv Edelgard Dorothea">
+            <p>
+                Edelgard x Dorothea<br>
+                As Edelgard's reign as the Adrestian emperor began, Enbarr was restored, and with it, a certain opera
+                house. Soon the Mittelfrank Opera Company put together a war drama depicting the journey and sacrifice
+                of the emperor and her companions, and the starring role went to none other than Dorothea. Edelgard
+                initially forbade the company from staging it, but was eventually persuaded by Dorothea's passionate
+                performance to rescind that decree. It is said that the emperor always set aside time to enjoy the opera
+                thereafter.
+            </p>
+        </div>
+        <div class="filterDiv Edelgard Hanneman">
+            <p>
+                Edelgard x Hanneman<br>
+                As the new Adrestian emperor, Edelgard gave all she had to breathe new life into the government of
+                Fódlan. To that end, Hanneman's research proved invaluable. Seeking to determine the nature of Crests,
+                and to do away with the inequality caused by them, the Father of Crestology produced magical tools that
+                could be used even without the aid of Crests. These were put to eager use by Edelgard, who saw both of
+                their dreams realized. It is not hard to imagine that a pair with such similar ideologies and plans for
+                the future would eventually settle into an affectionate and fulfilling relationship.
+            </p>
+        </div>
+        <div class="filterDiv Edelgard Manuela">
+            <p>
+                Edelgard x Manuela<br>
+                As the new Adrestian emperor, Edelgard gave all she had to breathe new life into the government of
+                Fódlan. Her first objective was to institute new class reforms and ensure the people's independence. For
+                that reason, she sought the counsel of Manuela, whose vast array of contacts, talents, and experience
+                proved invaluable. She became essential to Edelgard, and her skill as a physician kept the emperor in
+                good health for many years. Both remained unmarried, and it is said that the two became extremely close
+                over the years.
+            </p>
+        </div>
+        <div class="filterDiv Edelgard Lysithea">
+            <p>
+                Edelgard x Lysithea<br>
+                After the war, Edelgard and Lysithea threw themselves into the fight against those who slither in the
+                dark. The struggle was long and arduous, but not without its benefits. With careful analysis of ancient
+                techniques, they discovered ways to recover the years of life that had been stolen from them.
+                Afterwards, the new Adrestian emperor and Lysithea, her trusted officer, devoted the rest of their lives
+                to Fódlan's rule. For her counsel in instituting class reforms and ensuring the independence of the
+                people, Lysithea came to be known as the Wisdom of the Empire. The pair of talented women ushered Fódlan
+                into a new age of innovation and prosperity.
+            </p>
+        </div>
+        <div class="filterDiv Dimitri Dedue">
+            <p>
+                Dimitri x Dedue<br>
+                After his coronation, Dimitri assumed the throne of the Holy Kingdom of Faerghus, and his loyal vassal,
+                Dedue, remained ever at his side. Among Dimitri's achievements was the reconciliation with Duscur: an
+                extraordinary effort that required extensive negotiations to get past a history of betrayal and
+                oppression. It was a trying task, but Dimitri never once considered giving up. While they behaved as
+                lord and vassal in public, it is said that Dimitri and Dedue were more like family in private. When
+                Dimitri finally fell to illness, Dedue tended to his liege's deathbed, and then took up a post at his
+                grave for the rest of his days. When the time came, they were buried beside each other.
+            </p>
+        </div>
+    </div>
+    <script src="filter.js"></script>
+    </p>
 </body>
 
 </html>
